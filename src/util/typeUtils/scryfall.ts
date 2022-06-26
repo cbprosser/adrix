@@ -6,12 +6,12 @@ export const relatedComponents = [
 ] as const;
 
 export const rarities = [
+  'bonus',
   'common',
-  'uncommon',
+  'mythic',
   'rare',
   'special',
-  'mythic',
-  'bonus',
+  'uncommon',
 ] as const;
 
 export const multisideLayouts = [
@@ -43,3 +43,14 @@ export const layouts = [
   'vanguard',
   ...multifaceLayouts,
 ] as const;
+
+export const colorAbbrvs = ['W', 'U', 'B', 'R', 'G'] as const;
+
+export const legalities = [
+  'banned',
+  'legal',
+  'not_legal',
+  'restricted',
+] as const;
+
+export const finishes = ['etched', 'glossy', 'nonfoil', 'foil'] as const;

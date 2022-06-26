@@ -1,22 +1,29 @@
-import { layouts, rarities, relatedComponents } from '../../util';
+import {
+  colorAbbrvs,
+  finishes,
+  layouts,
+  legalities,
+  rarities,
+  relatedComponents,
+} from '../../util';
 
 /* eslint-disable camelcase */
 export type APICard = APICore & APIGameplay & APIPrint;
 
 export type APICore = {
   arena_id?: number;
+  cardmarket_id?: number;
   id: APIUUID;
   lang: string; // TODO: literalise
-  mtgo_id?: number;
   mtgo_foil_id?: number;
+  mtgo_id?: number;
   multiverse_ids?: number[];
-  tcgplayer_id?: number;
-  cardmarket_id?: number;
   object: 'card';
   oracle_id: APIUUID;
   prints_search_uri: APIURI;
   rulings_uri: APIURI;
   scryfall_uri: APIURI;
+  tcgplayer_id?: number;
   uri: APIURI;
 };
 
@@ -49,22 +56,25 @@ export type APIGameplay = {
 
 export type APIPrint = {
   artist?: string;
+  artist_ids: string[];
   booster: boolean;
   border_color: string;
   card_back_id: APIUUID;
   collector_number: string;
   content_warning?: boolean;
   digital: boolean;
+  finishes: APIFinishes[];
   flavor_name?: string;
   flavor_text?: string;
-  frame_effects?: string[]; // TODO: literalise
   frame: string;
+  frame_effects?: string[]; // TODO: literalise
   full_art: boolean;
   games: string[]; // TODO: literalise
   highres_image: boolean;
   illustration_id?: APIUUID;
   image_status: string; // TODO: literalise
   image_uris?: APIImageURIS;
+  preview?: APIPreview;
   prices: APIPrices;
   printed_name?: string;
   printed_text?: string;
@@ -77,17 +87,17 @@ export type APIPrint = {
   released_at: APIDateString;
   reprint: boolean;
   scryfall_set_uri: APIURI;
+  set: string;
+  set_id: string;
   set_name: string;
   set_search_uri: APIURI;
   set_type: string;
   set_uri: APIURI;
-  set: string;
   story_spotlight: boolean;
   textless: boolean;
   variation: boolean;
   variation_of?: APIUUID;
   watermark?: string;
-  preview?: APIPreview;
 };
 
 export type APICardFace = {
@@ -112,10 +122,10 @@ export type APICardFace = {
 };
 
 export type APIAllParts = {
-  id: APIUUID;
-  object: 'related_card';
   component: APIRelatedComponents;
+  id: APIUUID;
   name: string;
+  object: 'related_card';
   type_line: string;
   uri: APIURI;
 };
@@ -126,40 +136,43 @@ export type APIRelatedURIS = {
 };
 
 export type APIPurchaseURIS = {
-  tcgplayer: APIURI;
-  cardmarket: APIURI;
   cardhoarder: APIURI;
+  cardmarket: APIURI;
+  tcgplayer: APIURI;
   [key: string]: APIURI;
 };
 
 export type APIPrices = {
-  usd?: string;
-  usd_foil?: string;
   eur?: string;
   eur_foil?: string;
   tix?: string;
+  usd?: string;
+  usd_etched?: string;
+  usd_foil?: string;
 };
 
 export type APIImageURIS = {
-  small?: APIURI;
-  normal?: APIURI;
-  large?: APIURI;
-  png?: APIURI;
   art_crop?: APIURI;
   border_crop?: APIURI;
+  large?: APIURI;
+  normal?: APIURI;
+  png?: APIURI;
+  small?: APIURI;
 };
 
 export type APIPreview = {
   previewed_at?: APIDateString;
-  source_uri?: APIURI;
   source?: string;
+  source_uri?: APIURI;
 };
 
-export type APIColors = 'W' | 'U' | 'B' | 'R' | 'G';
+export type APIColors = typeof colorAbbrvs[number];
 
 export type APILegalities = {
-  [key: string]: 'legal' | 'not legal' | 'restricted' | 'banned';
+  [key: string]: typeof legalities[number];
 };
+
+export type APIFinishes = typeof finishes[number];
 
 export type APIURI = string;
 

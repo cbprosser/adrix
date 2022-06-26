@@ -1,14 +1,11 @@
 import axios from 'axios';
 import { APICard } from '../types/models/APICard';
 
-const scryfall = axios.create({
+export const scryfall = axios.create({
   baseURL: 'http://api.scryfall.com',
 });
 
-export class Scryfall {
-  private static api = scryfall;
-
-  static async getRandomCard() {
-    return await this.api.get<APICard>('/cards/random');
-  }
-}
+export const getRandomCard = async () => {
+  console.log(scryfall);
+  return await scryfall.get<APICard>('/cards/random');
+};
