@@ -1,4 +1,4 @@
-import { layouts, rarities, relatedComponents } from '../util';
+import { layouts, rarities, relatedComponents } from '../../util';
 
 /* eslint-disable camelcase */
 export type APICard = APICore & APIGameplay & APIPrint;

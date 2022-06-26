@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { APICard } from '../types/APICard';
+import { APICard } from '../types/models/APICard';
 
 const scryfall = axios.create({
   baseURL: 'http://api.scryfall.com',
