@@ -10,7 +10,9 @@ export const App = () => {
           const { Component, urls } = sitemap[key];
           return [
             ...accumulator,
-            ...urls.map((url) => <Route path={url} element={<Component />} />),
+            ...urls.map((url) => (
+              <Route key={`${key}${url}`} path={url} element={<Component />} />
+            )),
           ];
         },
         [] as JSX.Element[],

@@ -6,6 +6,5 @@ export const scryfall = axios.create({
 });
 
 export const getRandomCard = async () => {
-  console.log(scryfall);
   return await scryfall.get<APICard>('/cards/random');
 };

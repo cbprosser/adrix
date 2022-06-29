@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`store Suite Should have the correct properties 1`] = `
+Object {
+  "cards": Object {
+    "cards": Array [],
+  },
+}
+`;
