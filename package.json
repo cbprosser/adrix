@@ -62,6 +62,7 @@
     "rules": {
       "semi": 0,
       "comma-dangle": 0,
+      "no-console": "warn",
       "prettier/prettier": [
         "warn",
         {
@@ -97,6 +98,14 @@
     "**/*.{js,jsx,ts,tsx}": [
       "pnpm run lint --fix --max-warnings=0",
       "pnpm run prettier --write"
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!<rootDir>/node_modules/",
+      "!src/**/index*.{js,jsx,ts,tsx}",
+      "!src/reportWebVitals.ts"
     ]
   }
 }
