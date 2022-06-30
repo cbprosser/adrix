@@ -4,6 +4,11 @@ exports[`store Suite Should have the correct properties 1`] = `
 Object {
   "cards": Object {
     "cards": Array [],
+    "requests": Object {
+      "searchForCard": Object {
+        "status": "idle",
+      },
+    },
   },
 }
 `;

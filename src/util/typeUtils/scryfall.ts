@@ -14,6 +14,15 @@ export const rarities = [
   'uncommon',
 ] as const;
 
+export const imageVersions = [
+  'small',
+  'normal',
+  'large',
+  'png',
+  'art_crop',
+  'border_crop',
+] as const;
+
 export const multisideLayouts = [
   'double_faced_token',
   'double_sided',

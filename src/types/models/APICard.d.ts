@@ -5,6 +5,7 @@ import {
   legalities,
   rarities,
   relatedComponents,
+  imageVersions,
 } from '../../util';
 
 /* eslint-disable camelcase */
@@ -151,14 +152,9 @@ export type APIPrices = {
   usd_foil?: string;
 };
 
-export type APIImageURIS = {
-  art_crop?: APIURI;
-  border_crop?: APIURI;
-  large?: APIURI;
-  normal?: APIURI;
-  png?: APIURI;
-  small?: APIURI;
-};
+export type APIImageVersion = typeof imageVersions[number];
+
+export type APIImageURIS = Partial<Record<APIImageVersion, APIURI>>;
 
 export type APIPreview = {
   previewed_at?: APIDateString;

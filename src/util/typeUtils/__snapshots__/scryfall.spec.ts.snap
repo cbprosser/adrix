@@ -15,6 +15,14 @@ Object {
     "nonfoil",
     "foil",
   ],
+  "imageVersions": Array [
+    "small",
+    "normal",
+    "large",
+    "png",
+    "art_crop",
+    "border_crop",
+  ],
   "layouts": Array [
     "art_series",
     "augment",
