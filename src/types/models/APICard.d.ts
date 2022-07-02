@@ -6,12 +6,14 @@ import {
   rarities,
   relatedComponents,
   imageVersions,
+  securityStamps,
 } from '../../util';
 
 /* eslint-disable camelcase */
 export type APICard = APICore & APIGameplay & APIPrint;
 
 export type APICore = {
+  object: 'card';
   arena_id?: number;
   cardmarket_id?: number;
   id: APIUUID;
@@ -21,6 +23,7 @@ export type APICore = {
   multiverse_ids?: number[];
   object: 'card';
   oracle_id: APIUUID;
+  penny_rank?: number;
   prints_search_uri: APIURI;
   rulings_uri: APIURI;
   scryfall_uri: APIURI;
@@ -88,6 +91,7 @@ export type APIPrint = {
   released_at: APIDateString;
   reprint: boolean;
   scryfall_set_uri: APIURI;
+  security_stamp?: APISecurityStamps;
   set: string;
   set_id: string;
   set_name: string;
@@ -181,3 +185,5 @@ export type APILayout = typeof layouts[number];
 export type APIRarity = typeof rarities[number];
 
 export type APIRelatedComponents = typeof relatedComponents[number];
+
+export type APISecurityStamps = typeof securityStamps[number];

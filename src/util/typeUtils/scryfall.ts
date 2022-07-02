@@ -63,3 +63,5 @@ export const legalities = [
 ] as const;
 
 export const finishes = ['etched', 'glossy', 'nonfoil', 'foil'] as const;
+
+export const securityStamps = ['oval', 'triangle', 'acorn', 'arena'] as const;

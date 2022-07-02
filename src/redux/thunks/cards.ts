@@ -1,5 +1,6 @@
 import { ActionReducerMapBuilder, createAsyncThunk } from '@reduxjs/toolkit';
 import { searchCard } from '../../axios';
+import { REDUX } from '../../constants';
 import { CardsState } from '../../types';
 import {
   fulfilledCaseReducer,
@@ -19,9 +20,9 @@ export const searchForCard = createAsyncThunk(
     // TODO: Add response status utility
     if (resp.status >= 200 && resp.status < 300 && notError(resp.data)) {
       if (resp.data.data.length === 1) return resp.data;
-      message = 'Too many cards found';
+      message = REDUX.MESSAGE.SEARCHFORCARD.TOOMANY;
     }
-    return rejectWithValue(message ?? 'Card not found');
+    return rejectWithValue(message ?? REDUX.MESSAGE.SEARCHFORCARD.NOTFOUND);
   },
 );
 

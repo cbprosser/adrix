@@ -79,5 +79,11 @@ Object {
     "meld_result",
     "token",
   ],
+  "securityStamps": Array [
+    "oval",
+    "triangle",
+    "acorn",
+    "arena",
+  ],
 }
 `;
