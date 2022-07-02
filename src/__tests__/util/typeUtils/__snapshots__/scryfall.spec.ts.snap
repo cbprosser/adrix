@@ -15,6 +15,14 @@ Object {
     "nonfoil",
     "foil",
   ],
+  "imageVersions": Array [
+    "small",
+    "normal",
+    "large",
+    "png",
+    "art_crop",
+    "border_crop",
+  ],
   "layouts": Array [
     "art_series",
     "augment",
@@ -70,6 +78,12 @@ Object {
     "meld_part",
     "meld_result",
     "token",
+  ],
+  "securityStamps": Array [
+    "oval",
+    "triangle",
+    "acorn",
+    "arena",
   ],
 }
 `;

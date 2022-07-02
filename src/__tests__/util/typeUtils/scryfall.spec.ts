@@ -1,4 +1,4 @@
-import * as scryfallTypesObjects from './scryfall';
+import * as scryfallTypesObjects from '../../../util/typeUtils/scryfall';
 
 describe('scryfall types objects Suite', () => {
   it("Should match what's expected", () => {

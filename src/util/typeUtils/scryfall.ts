@@ -14,6 +14,15 @@ export const rarities = [
   'uncommon',
 ] as const;
 
+export const imageVersions = [
+  'small',
+  'normal',
+  'large',
+  'png',
+  'art_crop',
+  'border_crop',
+] as const;
+
 export const multisideLayouts = [
   'double_faced_token',
   'double_sided',
@@ -54,3 +63,5 @@ export const legalities = [
 ] as const;
 
 export const finishes = ['etched', 'glossy', 'nonfoil', 'foil'] as const;
+
+export const securityStamps = ['oval', 'triangle', 'acorn', 'arena'] as const;
