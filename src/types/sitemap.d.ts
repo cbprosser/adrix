@@ -1,10 +1,12 @@
-import React from 'react';
+import * as pages from '../components/Pages';
 
-export type SitePages = 'home' | 'results';
+export type SitePageComponents = keyof typeof pages;
+export type SitePages = Lowercase<SitePageComponents>;
 export type SiteURLS = '/' | '/search' | '/search/results';
 export type SiteMapItem = {
+  appBar?: boolean;
+  component: SitePageComponents;
   urls: SiteURLS[];
-  Component: React.FC | (() => JSX.Element);
 };
 
 export type Sitemap = Record<SitePages, SiteMapItem>;

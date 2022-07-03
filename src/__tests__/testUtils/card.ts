@@ -1,6 +1,5 @@
 import { APICard } from '../../types';
-import { APIError } from '../../types/models/APIError';
-import { APIList } from '../../types/models/APIList';
+import { APIError, APIList } from '../../types';
 
 export const mockCard: APICard = {
   object: 'card',

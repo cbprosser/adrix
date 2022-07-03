@@ -1,6 +1,4 @@
-import { APIResonse } from '../types/axios';
-import { APIError } from '../types/models/APIError';
-import { APIList } from '../types/models/APIList';
+import { APIError, APIList, APIResonse } from '../types';
 
 export const notError = <T>(data: APIResonse<T>): data is APIList<T> => {
   if ((data as APIError).status) return false;

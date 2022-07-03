@@ -4,7 +4,7 @@ import {
   RandomCardQueryParams,
   SearchCardQueryParams,
 } from '../types/axios';
-import { APICard } from '../types/models/APICard';
+import { APICard } from '../types';
 
 export const scryfall = axios.create({
   baseURL: 'http://api.scryfall.com',

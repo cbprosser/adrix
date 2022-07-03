@@ -1,13 +1,11 @@
-/* eslint-disable @typescript-eslint/no-empty-function */
+/* eslint-disable @typescript-eslint/no-empty-function, @typescript-eslint/no-explicit-any */
 import { CaseReducer } from '@reduxjs/toolkit';
 import {
   AsyncThunkFulfilledActionCreator,
   AsyncThunkPendingActionCreator,
   AsyncThunkRejectedActionCreator,
 } from '@reduxjs/toolkit/dist/createAsyncThunk';
-import { RootState } from '../types';
-
-/* eslint-disable @typescript-eslint/no-explicit-any */
+import { APISlice, RequestStatus, RootState } from '../types';
 
 export const pendingCaseReducer = <
   T,
@@ -76,3 +74,11 @@ export const rejectedCaseReducer = <
       func?.(state, payload);
   },
 ];
+
+export const generateRequestsObject = <T extends APISlice>(thunks: any) =>
+  Object.fromEntries(
+    Object.entries(thunks).map(([key]) => [
+      key,
+      { status: 'idle' } as RequestStatus,
+    ]),
+  ) as T['requests'];

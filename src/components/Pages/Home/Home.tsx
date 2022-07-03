@@ -1,9 +1,7 @@
 import { Container } from '@mui/material';
-import { useState } from 'react';
 import { SimpleCardSearchBar } from '../../SimpleCardSearchBar';
 
 export const Home: React.FC = () => {
-  const [query, setQuery] = useState('');
   return (
     <Container
       style={{
@@ -15,11 +13,7 @@ export const Home: React.FC = () => {
       }}
       fixed
     >
-      <SimpleCardSearchBar
-        hideError
-        value={query}
-        onNewCards={(card) => setQuery(card.name)}
-      />
+      <SimpleCardSearchBar hideError />
     </Container>
   );
 };
