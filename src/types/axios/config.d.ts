@@ -27,8 +27,8 @@ type SearchCardQueryParams = {
   q?: string;
 };
 
-export type APIResonse<T = unknown> = APIError | APIList<T>;
+export type APIResponse<T = unknown> = APIError | APIList<T>;
 
 export declare function searchCard(
   props?: SearchCardQueryParams,
-): Promise<AxiosResponse<APIResonse<APICard>, unknown>>;
+): Promise<AxiosResponse<APIResponse<APICard>, unknown>>;
