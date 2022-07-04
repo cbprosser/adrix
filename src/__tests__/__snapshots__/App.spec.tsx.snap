@@ -5,8 +5,16 @@ exports[`App Suite Should match the snapshot 1`] = `
   <div
     class="App"
   >
-    <div>
-      Home
+    <div
+      class="MuiBox-root css-1svsvwq"
+    >
+      <div
+        class="MuiContainer-root MuiContainer-maxWidthLg MuiContainer-fixed css-mtwdaa-MuiContainer-root"
+      >
+        <div>
+          Home
+        </div>
+      </div>
     </div>
   </div>
 </DocumentFragment>

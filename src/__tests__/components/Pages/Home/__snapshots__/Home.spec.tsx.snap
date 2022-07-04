@@ -6,9 +6,7 @@ exports[`Home Suite Should match the snapshot 1`] = `
     class="MuiContainer-root MuiContainer-maxWidthLg MuiContainer-fixed css-1ss2ei0-MuiContainer-root"
     style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh;"
   >
-    <div
-      value=""
-    >
+    <div>
       SimpleCardSearchBar
     </div>
   </div>
