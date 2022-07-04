@@ -1,13 +1,13 @@
-import { Home, Results } from './components';
-import { Sitemap } from './types/sitemap';
+import { Sitemap } from './types';
 
 export const sitemap: Sitemap = {
   home: {
     urls: ['/', '/search'],
-    Component: Home,
+    component: 'Home',
   },
   results: {
+    appBar: true,
     urls: ['/search/results'],
-    Component: Results,
+    component: 'Results',
   },
 };

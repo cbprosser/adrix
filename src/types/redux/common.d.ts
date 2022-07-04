@@ -6,8 +6,10 @@ export type RequestStatus =
       success?: boolean;
     }
   | {
-      success: false;
       message: string;
+      requestId?: string;
+      status: 'idle' | 'calling';
+      success: false;
     };
 
 export type APISlice<T extends string = string> = {

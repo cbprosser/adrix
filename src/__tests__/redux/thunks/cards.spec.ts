@@ -1,7 +1,7 @@
 import { scryfall } from '../../../axios';
 import { REDUX } from '../../../constants';
 import { cardsSlice, initialCardsState } from '../../../redux/slices';
-import { searchForCard } from '../../../redux/thunks/cards';
+import { loadSearch, searchForCard } from '../../../redux/thunks/cards';
 import { CardsState } from '../../../types';
 import {
   getMockCardList,
@@ -78,8 +78,9 @@ describe('Card thunks Suite', () => {
             cards: [mockCard],
           };
           const expectedState: CardsState = {
-            ...initialCardsState,
+            ...initialState,
             requests: {
+              ...initialState.requests,
               searchForCard: {
                 status: 'calling',
                 requestId: MOCK.REQUEST_ID,
@@ -98,6 +99,7 @@ describe('Card thunks Suite', () => {
           const initialState: CardsState = {
             ...initialCardsState,
             requests: {
+              ...initialCardsState.requests,
               searchForCard: {
                 requestId: MOCK.REQUEST_ID,
                 status: 'calling',
@@ -108,6 +110,7 @@ describe('Card thunks Suite', () => {
             ...initialCardsState,
             cards: mockSingleCardList.data,
             requests: {
+              ...initialCardsState.requests,
               searchForCard: {
                 requestId: MOCK.REQUEST_ID,
                 status: 'idle',
@@ -131,16 +134,19 @@ describe('Card thunks Suite', () => {
         it('Should set the state appropriately when rejected', () => {
           const initialState: CardsState = {
             ...initialCardsState,
+            cards: [mockCard],
             requests: {
+              ...initialCardsState.requests,
               searchForCard: {
-                requestId: MOCK.REQUEST_ID,
                 status: 'calling',
+                requestId: MOCK.REQUEST_ID,
               },
             },
           };
           const expectedState: CardsState = {
             ...initialCardsState,
             requests: {
+              ...initialCardsState.requests,
               searchForCard: {
                 message: MOCK.MESSAGE,
                 requestId: MOCK.REQUEST_ID,
@@ -153,6 +159,144 @@ describe('Card thunks Suite', () => {
             initialState,
             mockRejectedAction(
               searchForCard,
+              MOCK.REQUEST_ID,
+              'card',
+              MOCK.MESSAGE,
+            ),
+          );
+
+          expect(newState).toEqual(expectedState);
+        });
+      });
+    });
+    describe('loadSearch suite', () => {
+      it('Should succeed', async () => {
+        mockGet.mockReturnValue(
+          new Promise((resolve) => {
+            resolve(getMockResponse(mockSingleCardList));
+          }),
+        );
+
+        const resp = await loadSearch(mockCard.name)(...params);
+
+        expect(resp.meta.requestStatus).toEqual('fulfilled');
+        expect(resp.payload).toEqual(mockSingleCardList);
+      });
+
+      it('Should reject when axios returns an error', async () => {
+        mockGet.mockReturnValue(
+          new Promise((resolve) => {
+            resolve(getMockResponse(mockCardError));
+          }),
+        );
+
+        const resp = await loadSearch(mockCard.name)(...params);
+
+        expect(resp.meta.requestStatus).toEqual('rejected');
+        expect(resp.payload).toEqual(REDUX.MESSAGE.SEARCHFORCARD.NOTFOUND);
+      });
+
+      it('Should reject when axios returns a list', async () => {
+        mockGet.mockReturnValue(
+          new Promise((resolve) => {
+            resolve(getMockResponse(mockMultiCardList));
+          }),
+        );
+
+        const resp = await loadSearch(mockCard.name)(...params);
+
+        expect(resp.meta.requestStatus).toEqual('rejected');
+        expect(resp.payload).toEqual(REDUX.MESSAGE.SEARCHFORCARD.TOOMANY);
+      });
+
+      describe('Reducer builders', () => {
+        it('Should set the state appropriately when pending', () => {
+          const initialState: CardsState = {
+            ...initialCardsState,
+            cards: [mockCard],
+          };
+          const expectedState: CardsState = {
+            ...initialState,
+            requests: {
+              ...initialState.requests,
+              loadSearch: {
+                status: 'calling',
+                requestId: MOCK.REQUEST_ID,
+              },
+            },
+          };
+          const newState = cardsSlice.reducer(
+            initialState,
+            mockPendingAction(loadSearch, MOCK.REQUEST_ID, 'card'),
+          );
+
+          expect(newState).toEqual(expectedState);
+        });
+
+        it('Should set the state appropriately when fulfilled', () => {
+          const initialState: CardsState = {
+            ...initialCardsState,
+            requests: {
+              ...initialCardsState.requests,
+              loadSearch: {
+                requestId: MOCK.REQUEST_ID,
+                status: 'calling',
+              },
+            },
+          };
+          const expectedState: CardsState = {
+            ...initialCardsState,
+            cards: mockSingleCardList.data,
+            requests: {
+              ...initialCardsState.requests,
+              loadSearch: {
+                requestId: MOCK.REQUEST_ID,
+                status: 'idle',
+                success: true,
+              },
+            },
+          };
+          const newState = cardsSlice.reducer(
+            initialState,
+            mockFulfilledAction(
+              loadSearch,
+              MOCK.REQUEST_ID,
+              'card',
+              mockSingleCardList,
+            ),
+          );
+
+          expect(newState).toEqual(expectedState);
+        });
+
+        it('Should set the state appropriately when rejected', () => {
+          const initialState: CardsState = {
+            ...initialCardsState,
+            cards: [mockCard],
+            requests: {
+              ...initialCardsState.requests,
+              loadSearch: {
+                status: 'calling',
+                requestId: MOCK.REQUEST_ID,
+              },
+            },
+          };
+          const expectedState: CardsState = {
+            ...initialCardsState,
+            requests: {
+              ...initialCardsState.requests,
+              loadSearch: {
+                message: MOCK.MESSAGE,
+                requestId: MOCK.REQUEST_ID,
+                status: 'idle',
+                success: false,
+              },
+            },
+          };
+          const newState = cardsSlice.reducer(
+            initialState,
+            mockRejectedAction(
+              loadSearch,
               MOCK.REQUEST_ID,
               'card',
               MOCK.MESSAGE,

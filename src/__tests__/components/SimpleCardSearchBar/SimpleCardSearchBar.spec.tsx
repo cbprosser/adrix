@@ -15,7 +15,7 @@ jest.mock('../../../redux/thunks');
 
 jest.mock('../../../redux/hooks', () => ({
   useAppSelector: jest.fn(),
-  useAppDispatch: jest.fn().mockImplementation(() => mockDispatch),
+  useAppDispatch: jest.fn(() => mockDispatch),
 }));
 
 jest.mock('axios');
@@ -80,10 +80,7 @@ describe('SimpleCardSearchBar Suite', () => {
   });
 
   it('Should display a message when there is an error', () => {
-    mockSelector.mockReturnValue({
-      ...initialCardsState,
-      requests: { searchForCard: { message: MOCK.MESSAGE } },
-    } as CardsState);
+    mockSelector.mockReturnValue({ message: MOCK.MESSAGE });
     render(<SimpleCardSearchBar />);
 
     expect(screen.getByText(MOCK.MESSAGE)).toBeDefined();
@@ -97,19 +94,6 @@ describe('SimpleCardSearchBar Suite', () => {
     render(<SimpleCardSearchBar hideError={true} />);
 
     expect(screen.queryByText(MOCK.MESSAGE)).toBeNull();
-  });
-
-  it('Should call the onNewCards callback when the cards in the redux store update', () => {
-    const handleNewCards = jest.fn();
-    const view = render(<SimpleCardSearchBar onNewCards={handleNewCards} />);
-
-    expect(screen.getByRole('textbox')).toBeDefined();
-
-    mockSelector.mockReturnValue({ ...initialCardsState, cards: [mockCard] });
-
-    view.rerender(<SimpleCardSearchBar onNewCards={handleNewCards} />);
-
-    expect(handleNewCards).toBeCalledWith(mockCard);
   });
 
   it('Should call the onChange callback when the value prop changes', async () => {
@@ -127,7 +111,7 @@ describe('SimpleCardSearchBar Suite', () => {
     render(<SimpleCardSearchBar />);
 
     expect(mockSelector.mock.calls[0][0](mockInitialState)).toEqual(
-      initialCardsState,
+      initialCardsState.requests.searchForCard,
     );
   });
 });

@@ -1,6 +1,5 @@
 import { APICard } from '../../types';
-import { APIError } from '../../types/models/APIError';
-import { APIList } from '../../types/models/APIList';
+import { APIError, APIList } from '../../types';
 
 export const mockCard: APICard = {
   object: 'card',
@@ -156,6 +155,153 @@ export const mockCard: APICard = {
       'https://www.cardmarket.com/en/Magic/Products/Search?referrer=scryfall&searchString=Adrix+and+Nev%2C+Twincasters&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall',
     cardhoarder:
       'https://www.cardhoarder.com/cards/89261?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall',
+  },
+};
+
+export const mockPlaneswalkerCard: APICard = {
+  object: 'card',
+  id: '178bf300-38cf-4ab2-9e66-6fcaa112b649',
+  oracle_id: '06425cb9-d157-4155-a727-78656df12458',
+  multiverse_ids: [513688],
+  mtgo_id: 88899,
+  arena_id: 76604,
+  tcgplayer_id: 234961,
+  cardmarket_id: 554113,
+  name: 'Kasmina, Enigma Sage',
+  lang: 'en',
+  released_at: '2021-04-23',
+  uri: 'https://api.scryfall.com/cards/178bf300-38cf-4ab2-9e66-6fcaa112b649',
+  scryfall_uri:
+    'https://scryfall.com/card/stx/196/kasmina-enigma-sage?utm_source=api',
+  layout: 'normal',
+  highres_image: true,
+  image_status: 'highres_scan',
+  image_uris: {
+    small:
+      'https://c1.scryfall.com/file/scryfall-cards/small/front/1/7/178bf300-38cf-4ab2-9e66-6fcaa112b649.jpg?1627429348',
+    normal:
+      'https://c1.scryfall.com/file/scryfall-cards/normal/front/1/7/178bf300-38cf-4ab2-9e66-6fcaa112b649.jpg?1627429348',
+    large:
+      'https://c1.scryfall.com/file/scryfall-cards/large/front/1/7/178bf300-38cf-4ab2-9e66-6fcaa112b649.jpg?1627429348',
+    png: 'https://c1.scryfall.com/file/scryfall-cards/png/front/1/7/178bf300-38cf-4ab2-9e66-6fcaa112b649.png?1627429348',
+    art_crop:
+      'https://c1.scryfall.com/file/scryfall-cards/art_crop/front/1/7/178bf300-38cf-4ab2-9e66-6fcaa112b649.jpg?1627429348',
+    border_crop:
+      'https://c1.scryfall.com/file/scryfall-cards/border_crop/front/1/7/178bf300-38cf-4ab2-9e66-6fcaa112b649.jpg?1627429348',
+  },
+  mana_cost: '{1}{G}{U}',
+  cmc: 3,
+  type_line: 'Legendary Planeswalker — Kasmina',
+  oracle_text:
+    'Each other planeswalker you control has the loyalty abilities of Kasmina, Enigma Sage.\n+2: Scry 1.\n−X: Create a 0/0 green and blue Fractal creature token. Put X +1/+1 counters on it.\n−8: Search your library for an instant or sorcery card that shares a color with this planeswalker, exile that card, then shuffle. You may cast that card without paying its mana cost.',
+  loyalty: '2',
+  colors: ['G', 'U'],
+  color_identity: ['G', 'U'],
+  keywords: ['Scry'],
+  all_parts: [
+    {
+      object: 'related_card',
+      id: '178bf300-38cf-4ab2-9e66-6fcaa112b649',
+      component: 'combo_piece',
+      name: 'Kasmina, Enigma Sage',
+      type_line: 'Legendary Planeswalker — Kasmina',
+      uri: 'https://api.scryfall.com/cards/178bf300-38cf-4ab2-9e66-6fcaa112b649',
+    },
+    {
+      object: 'related_card',
+      id: '910f48ab-b04e-4874-b31d-a86a7bc5af14',
+      component: 'token',
+      name: 'Fractal',
+      type_line: 'Token Creature — Fractal',
+      uri: 'https://api.scryfall.com/cards/910f48ab-b04e-4874-b31d-a86a7bc5af14',
+    },
+  ],
+  legalities: {
+    standard: 'legal',
+    future: 'legal',
+    historic: 'legal',
+    gladiator: 'legal',
+    pioneer: 'legal',
+    explorer: 'legal',
+    modern: 'legal',
+    legacy: 'legal',
+    pauper: 'not_legal',
+    vintage: 'legal',
+    penny: 'not_legal',
+    commander: 'legal',
+    brawl: 'legal',
+    historicbrawl: 'legal',
+    alchemy: 'legal',
+    paupercommander: 'not_legal',
+    duel: 'legal',
+    oldschool: 'not_legal',
+    premodern: 'not_legal',
+  },
+  games: ['arena', 'paper', 'mtgo'],
+  reserved: false,
+  foil: true,
+  nonfoil: true,
+  finishes: ['nonfoil', 'foil'],
+  oversized: false,
+  promo: false,
+  reprint: false,
+  variation: false,
+  set_id: '541c3c28-8747-40e5-a231-8e8f33234859',
+  set: 'stx',
+  set_name: 'Strixhaven: School of Mages',
+  set_type: 'expansion',
+  set_uri: 'https://api.scryfall.com/sets/541c3c28-8747-40e5-a231-8e8f33234859',
+  set_search_uri:
+    'https://api.scryfall.com/cards/search?order=set&q=e%3Astx&unique=prints',
+  scryfall_set_uri: 'https://scryfall.com/sets/stx?utm_source=api',
+  rulings_uri:
+    'https://api.scryfall.com/cards/178bf300-38cf-4ab2-9e66-6fcaa112b649/rulings',
+  prints_search_uri:
+    'https://api.scryfall.com/cards/search?order=released&q=oracleid%3A06425cb9-d157-4155-a727-78656df12458&unique=prints',
+  collector_number: '196',
+  digital: false,
+  rarity: 'mythic',
+  card_back_id: '0aeebaf5-8c7d-4636-9e82-8c27447861f7',
+  artist: 'Tyler Jacobson',
+  artist_ids: ['522af130-8db4-4b4b-950c-6e2b246339cf'],
+  illustration_id: 'cb0ecc6b-5f73-47ab-877b-a32e9fdd4a99',
+  border_color: 'black',
+  frame: '2015',
+  security_stamp: 'oval',
+  full_art: false,
+  textless: false,
+  booster: true,
+  story_spotlight: false,
+  edhrec_rank: 5554,
+  preview: {
+    source: 'Sean Plott (Day9TV)',
+    source_uri: 'https://twitter.com/day9tv/status/1374027397905874944',
+    previewed_at: '2021-03-22',
+  },
+  prices: {
+    usd: '1.21',
+    usd_foil: '1.55',
+    usd_etched: undefined,
+    eur: '1.00',
+    eur_foil: '2.23',
+    tix: '0.24',
+  },
+  related_uris: {
+    gatherer:
+      'https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=513688',
+    tcgplayer_infinite_articles:
+      'https://infinite.tcgplayer.com/search?contentMode=article&game=magic&partner=scryfall&q=Kasmina%2C+Enigma+Sage&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall',
+    tcgplayer_infinite_decks:
+      'https://infinite.tcgplayer.com/search?contentMode=deck&game=magic&partner=scryfall&q=Kasmina%2C+Enigma+Sage&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall',
+    edhrec: 'https://edhrec.com/route/?cc=Kasmina%2C+Enigma+Sage',
+  },
+  purchase_uris: {
+    tcgplayer:
+      'https://www.tcgplayer.com/product/234961?page=1&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall',
+    cardmarket:
+      'https://www.cardmarket.com/en/Magic/Products/Search?referrer=scryfall&searchString=Kasmina%2C+Enigma+Sage&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall',
+    cardhoarder:
+      'https://www.cardhoarder.com/cards/88899?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall',
   },
 };
 
