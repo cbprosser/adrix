@@ -1,6 +1,6 @@
 import axios from 'axios';
 import {
-  APIResonse,
+  APIResponse,
   RandomCardQueryParams,
   SearchCardQueryParams,
 } from '../types/axios';
@@ -16,5 +16,5 @@ export const getRandomCard = async (params?: RandomCardQueryParams) => {
 };
 
 export const searchCard = async (params: SearchCardQueryParams) => {
-  return await scryfall.get<APIResonse<APICard>>('/cards/search', { params });
+  return await scryfall.get<APIResponse<APICard>>('/cards/search', { params });
 };

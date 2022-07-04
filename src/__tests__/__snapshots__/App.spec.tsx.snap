@@ -9,10 +9,12 @@ exports[`App Suite Should match the snapshot 1`] = `
       class="MuiBox-root css-1svsvwq"
     >
       <div
-        class="MuiContainer-root MuiContainer-maxWidthLg MuiContainer-fixed css-mtwdaa-MuiContainer-root"
+        class="MuiContainer-root MuiContainer-maxWidthLg MuiContainer-fixed css-14vhxd0-MuiContainer-root"
       >
-        <div>
-          Home
+        <div
+          id="Home"
+        >
+          {}
         </div>
       </div>
     </div>

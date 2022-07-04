@@ -1,9 +1,11 @@
+import { Box } from '@mui/material';
 import { useMemo } from 'react';
 import { useLocation, useSearchParams } from 'react-router-dom';
 import { loadSearch, useAppDispatch } from '../../../redux';
-import { APICard, APIResonse } from '../../../types';
+import { APICard, APIResponse } from '../../../types';
 import { notError } from '../../../util';
 import { CardDisplay } from '../../CardDisplay';
+import { MultipleCardDisplay } from '../../MultipleCardDisplay';
 
 export const Results = () => {
   const { state } = useLocation();
@@ -12,12 +14,12 @@ export const Results = () => {
   const dispatch = useAppDispatch();
 
   const display = useMemo(() => {
-    const response = (state as { response: APIResonse<APICard> } | null)
+    const response = (state as { response: APIResponse<APICard> } | null)
       ?.response;
     if (response !== undefined) {
       if (notError(response)) {
         const cards = response.data;
-        if (cards.length > 1) return <>More than one card found</>;
+        if (cards.length > 1) return <MultipleCardDisplay list={response} />;
         else return <CardDisplay card={cards[0]} />;
       }
       return <>no cards found for search {query}</>;
@@ -26,5 +28,5 @@ export const Results = () => {
     return <>loading</>;
   }, [dispatch, query, state]);
 
-  return <div>{display}</div>;
+  return <Box sx={{ height: '100%' }}>{display}</Box>;
 };

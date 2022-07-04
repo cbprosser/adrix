@@ -22,19 +22,16 @@ export const searchForCard = createAsyncThunk(
 
     // TODO: Add response status utility
     if (resp.status >= 200 && resp.status < 300 && notError(resp.data)) {
-      if (resp.data.data.length === 1) {
-        appHistory.push(
-          {
-            pathname: sitemap.results.urls[0],
-            search: `?${createSearchParams({ q: query })}`,
-          },
-          {
-            response: resp.data,
-          },
-        );
-        return resp.data;
-      }
-      message = REDUX.MESSAGE.SEARCHFORCARD.TOOMANY;
+      appHistory.push(
+        {
+          pathname: sitemap.results.urls[0],
+          search: `?${createSearchParams({ q: query })}`,
+        },
+        {
+          response: resp.data,
+        },
+      );
+      return resp.data;
     }
     appHistory.push(
       {
@@ -72,19 +69,16 @@ export const loadSearch = createAsyncThunk(
 
     // TODO: Add response status utility
     if (resp.status >= 200 && resp.status < 300 && notError(resp.data)) {
-      if (resp.data.data.length === 1) {
-        appHistory.replace(
-          {
-            pathname: sitemap.results.urls[0],
-            search: `?${createSearchParams({ q: query })}`,
-          },
-          {
-            list: resp.data,
-          },
-        );
-        return resp.data;
-      }
-      message = REDUX.MESSAGE.SEARCHFORCARD.TOOMANY;
+      appHistory.replace(
+        {
+          pathname: sitemap.results.urls[0],
+          search: `?${createSearchParams({ q: query })}`,
+        },
+        {
+          response: resp.data,
+        },
+      );
+      return resp.data;
     }
     appHistory.push(
       {

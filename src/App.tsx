@@ -30,6 +30,7 @@ export const App = () => {
                     <Container
                       sx={{
                         flexGrow: 1,
+                        height: 0,
                       }}
                       fixed
                     >
