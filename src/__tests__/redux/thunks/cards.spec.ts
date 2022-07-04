@@ -32,7 +32,7 @@ describe('Card thunks Suite', () => {
     const mockSingleCardList = getMockCardList();
     const mockMultiCardList = getMockCardList(true);
     describe('searchForCard suite', () => {
-      it('Should succeed', async () => {
+      it('Should succeed for a single card', async () => {
         mockGet.mockReturnValue(
           new Promise((resolve) => {
             resolve(getMockResponse(mockSingleCardList));
@@ -43,6 +43,19 @@ describe('Card thunks Suite', () => {
 
         expect(resp.meta.requestStatus).toEqual('fulfilled');
         expect(resp.payload).toEqual(mockSingleCardList);
+      });
+
+      it('Should succeed for a list', async () => {
+        mockGet.mockReturnValue(
+          new Promise((resolve) => {
+            resolve(getMockResponse(mockMultiCardList));
+          }),
+        );
+
+        const resp = await searchForCard(mockCard.name)(...params);
+
+        expect(resp.meta.requestStatus).toEqual('fulfilled');
+        expect(resp.payload).toEqual(mockMultiCardList);
       });
 
       it('Should reject when axios returns an error', async () => {
@@ -56,19 +69,6 @@ describe('Card thunks Suite', () => {
 
         expect(resp.meta.requestStatus).toEqual('rejected');
         expect(resp.payload).toEqual(REDUX.MESSAGE.SEARCHFORCARD.NOTFOUND);
-      });
-
-      it('Should reject when axios returns a list', async () => {
-        mockGet.mockReturnValue(
-          new Promise((resolve) => {
-            resolve(getMockResponse(mockMultiCardList));
-          }),
-        );
-
-        const resp = await searchForCard(mockCard.name)(...params);
-
-        expect(resp.meta.requestStatus).toEqual('rejected');
-        expect(resp.payload).toEqual(REDUX.MESSAGE.SEARCHFORCARD.TOOMANY);
       });
 
       describe('Reducer builders', () => {
@@ -170,7 +170,7 @@ describe('Card thunks Suite', () => {
       });
     });
     describe('loadSearch suite', () => {
-      it('Should succeed', async () => {
+      it('Should succeed for a single card', async () => {
         mockGet.mockReturnValue(
           new Promise((resolve) => {
             resolve(getMockResponse(mockSingleCardList));
@@ -181,6 +181,19 @@ describe('Card thunks Suite', () => {
 
         expect(resp.meta.requestStatus).toEqual('fulfilled');
         expect(resp.payload).toEqual(mockSingleCardList);
+      });
+
+      it('Should succeed for a list', async () => {
+        mockGet.mockReturnValue(
+          new Promise((resolve) => {
+            resolve(getMockResponse(mockMultiCardList));
+          }),
+        );
+
+        const resp = await loadSearch(mockCard.name)(...params);
+
+        expect(resp.meta.requestStatus).toEqual('fulfilled');
+        expect(resp.payload).toEqual(mockMultiCardList);
       });
 
       it('Should reject when axios returns an error', async () => {
@@ -194,19 +207,6 @@ describe('Card thunks Suite', () => {
 
         expect(resp.meta.requestStatus).toEqual('rejected');
         expect(resp.payload).toEqual(REDUX.MESSAGE.SEARCHFORCARD.NOTFOUND);
-      });
-
-      it('Should reject when axios returns a list', async () => {
-        mockGet.mockReturnValue(
-          new Promise((resolve) => {
-            resolve(getMockResponse(mockMultiCardList));
-          }),
-        );
-
-        const resp = await loadSearch(mockCard.name)(...params);
-
-        expect(resp.meta.requestStatus).toEqual('rejected');
-        expect(resp.payload).toEqual(REDUX.MESSAGE.SEARCHFORCARD.TOOMANY);
       });
 
       describe('Reducer builders', () => {

@@ -12,6 +12,11 @@ jest.mock('../../../../components/CardDisplay', () => ({
   CardDisplay: (props: any) => mockAComponent('CardDisplay')(props),
 }));
 
+jest.mock('../../../../components/MultipleCardDisplay', () => ({
+  MultipleCardDisplay: (props: any) =>
+    mockAComponent('MultipleCardDisplay')(props),
+}));
+
 const mockDispatch = jest.fn();
 
 jest.mock('../../../../redux/thunks');
