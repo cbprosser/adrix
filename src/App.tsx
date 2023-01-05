@@ -28,10 +28,11 @@ export const App = () => {
                   >
                     {appBar && <AppHeader />}
                     <Container
-                      sx={{
+                      sx={(theme) => ({
                         flexGrow: 1,
                         height: 0,
-                      }}
+                        paddingTop: theme.spacing(2.5),
+                      })}
                       fixed
                     >
                       <Component />

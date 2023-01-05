@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { CssBaseline } from '@mui/material';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
@@ -16,6 +17,7 @@ root.render(
   <React.StrictMode>
     <CssBaseline />
     <Provider store={store}>
+      {/* @ts-expect-error see https://github.com/remix-run/react-router/issues/9422#issuecomment-1302146568 */}
       <HistoryRouter history={appHistory}>
         <App />
       </HistoryRouter>
