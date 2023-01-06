@@ -3,3 +3,18 @@
 // expect(element).toHaveTextContent(/react/i)
 // learn more: https://github.com/testing-library/jest-dom
 import '@testing-library/jest-dom';
+import '@testing-library/jest-dom/extend-expect';
+import { createSerializer } from '@emotion/jest';
+import { getSnapshotDiffSerializer, toMatchDiffSnapshot } from 'snapshot-diff';
+
+expect.addSnapshotSerializer(
+  createSerializer({
+    classNameReplacer: (classname, index) =>
+      `${classname.replace(/css-[a-zA-Z0-9]+/, `css-${index}`)}`,
+    includeStyles: false,
+  }),
+);
+
+expect.addSnapshotSerializer(getSnapshotDiffSerializer());
+
+expect.extend({ toMatchDiffSnapshot });

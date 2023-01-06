@@ -4,7 +4,13 @@ import { initialCardsState, useAppSelector } from '../../../../redux';
 
 jest.mock('../../../../components/SimpleCardSearchBar', () => ({
   SimpleCardSearchBar: (props: any) => (
-    <div {...props}>SimpleCardSearchBar</div>
+    <div {...props}>Mocked SimpleCardSearchBar</div>
+  ),
+}));
+
+jest.mock('../../../../components/AdvancedSearchLinkButton', () => ({
+  AdvancedSearchLinkButton: (props: any) => (
+    <div {...props}>Mocked AdvancedSearchLinkButton</div>
   ),
 }));
 

@@ -3,7 +3,7 @@
 exports[`Home Suite Should match the snapshot when a card is found 1`] = `
 <DocumentFragment>
   <div
-    class="MuiBox-root css-10klw3m"
+    class="MuiBox-root css-0"
   >
     <div
       id="CardDisplay"
@@ -17,7 +17,7 @@ exports[`Home Suite Should match the snapshot when a card is found 1`] = `
 exports[`Home Suite Should match the snapshot when more than one card is found 1`] = `
 <DocumentFragment>
   <div
-    class="MuiBox-root css-10klw3m"
+    class="MuiBox-root css-0"
   >
     <div
       id="MultipleCardDisplay"
@@ -31,7 +31,7 @@ exports[`Home Suite Should match the snapshot when more than one card is found 1
 exports[`Home Suite Should match the snapshot when no card is found 1`] = `
 <DocumentFragment>
   <div
-    class="MuiBox-root css-10klw3m"
+    class="MuiBox-root css-0"
   >
     no cards found for search adrix and nev
   </div>
@@ -41,7 +41,7 @@ exports[`Home Suite Should match the snapshot when no card is found 1`] = `
 exports[`Home Suite Should match the snapshot when there is no card in the history 1`] = `
 <DocumentFragment>
   <div
-    class="MuiBox-root css-10klw3m"
+    class="MuiBox-root css-0"
   >
     loading
   </div>

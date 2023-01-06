@@ -3,70 +3,70 @@
 exports[`CardDisplay Suite Should match the snapshot when a planeswalker card is present 1`] = `
 <DocumentFragment>
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-buqdjb-MuiPaper-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-0-MuiPaper-root"
   >
     <img
-      class="MuiBox-root css-ggsui4"
+      class="MuiBox-root css-1"
       src="https://c1.scryfall.com/file/scryfall-cards/normal/front/1/7/178bf300-38cf-4ab2-9e66-6fcaa112b649.jpg?1627429348"
     />
     <div
-      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-15b9ay5-MuiPaper-root"
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-2-MuiPaper-root"
     >
       <p
-        class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 css-3-MuiTypography-root"
       >
         Kasmina, Enigma Sage - {1}{G}{U}
       </p>
       <hr
-        class="MuiDivider-root MuiDivider-fullWidth css-1jgkusq-MuiDivider-root"
+        class="MuiDivider-root MuiDivider-fullWidth css-4-MuiDivider-root"
       />
       <p
-        class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 css-3-MuiTypography-root"
       >
         Legendary Planeswalker — Kasmina
       </p>
       <hr
-        class="MuiDivider-root MuiDivider-fullWidth css-1jgkusq-MuiDivider-root"
+        class="MuiDivider-root MuiDivider-fullWidth css-4-MuiDivider-root"
       />
       <p
-        class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 css-3-MuiTypography-root"
       >
         Each other planeswalker you control has the loyalty abilities of Kasmina, Enigma Sage.
       </p>
       <p
-        class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 css-3-MuiTypography-root"
       >
         +2: Scry 1.
       </p>
       <p
-        class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 css-3-MuiTypography-root"
       >
         −X: Create a 0/0 green and blue Fractal creature token. Put X +1/+1 counters on it.
       </p>
       <p
-        class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 css-3-MuiTypography-root"
       >
         −8: Search your library for an instant or sorcery card that shares a color with this planeswalker, exile that card, then shuffle. You may cast that card without paying its mana cost.
       </p>
       <hr
-        class="MuiDivider-root MuiDivider-fullWidth css-1jgkusq-MuiDivider-root"
+        class="MuiDivider-root MuiDivider-fullWidth css-4-MuiDivider-root"
       />
       <p
-        class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 css-3-MuiTypography-root"
       >
         2
       </p>
       <hr
-        class="MuiDivider-root MuiDivider-fullWidth css-1jgkusq-MuiDivider-root"
+        class="MuiDivider-root MuiDivider-fullWidth css-4-MuiDivider-root"
       />
       <p
-        class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 css-3-MuiTypography-root"
       >
         Tyler Jacobson
       </p>
     </div>
     <div
-      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-nzbgm2-MuiPaper-root"
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-15-MuiPaper-root"
     >
       coming soon
     </div>
@@ -77,60 +77,60 @@ exports[`CardDisplay Suite Should match the snapshot when a planeswalker card is
 exports[`CardDisplay Suite Should match the snapshot when a standard card is present 1`] = `
 <DocumentFragment>
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-buqdjb-MuiPaper-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-0-MuiPaper-root"
   >
     <img
-      class="MuiBox-root css-ggsui4"
+      class="MuiBox-root css-1"
       src="https://c1.scryfall.com/file/scryfall-cards/normal/front/d/4/d495e084-92ec-4675-b6aa-8ade2775b796.jpg?1625190786"
     />
     <div
-      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-15b9ay5-MuiPaper-root"
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-2-MuiPaper-root"
     >
       <p
-        class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 css-3-MuiTypography-root"
       >
         Adrix and Nev, Twincasters - {2}{G}{U}
       </p>
       <hr
-        class="MuiDivider-root MuiDivider-fullWidth css-1jgkusq-MuiDivider-root"
+        class="MuiDivider-root MuiDivider-fullWidth css-4-MuiDivider-root"
       />
       <p
-        class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 css-3-MuiTypography-root"
       >
         Legendary Creature — Merfolk Wizard
       </p>
       <hr
-        class="MuiDivider-root MuiDivider-fullWidth css-1jgkusq-MuiDivider-root"
+        class="MuiDivider-root MuiDivider-fullWidth css-4-MuiDivider-root"
       />
       <p
-        class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 css-3-MuiTypography-root"
       >
         Ward {2} (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays {2}.)
       </p>
       <p
-        class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 css-3-MuiTypography-root"
       >
         If one or more tokens would be created under your control, twice that many of those tokens are created instead.
       </p>
       <hr
-        class="MuiDivider-root MuiDivider-fullWidth css-1jgkusq-MuiDivider-root"
+        class="MuiDivider-root MuiDivider-fullWidth css-4-MuiDivider-root"
       />
       <p
-        class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 css-3-MuiTypography-root"
       >
         2/2
       </p>
       <hr
-        class="MuiDivider-root MuiDivider-fullWidth css-1jgkusq-MuiDivider-root"
+        class="MuiDivider-root MuiDivider-fullWidth css-4-MuiDivider-root"
       />
       <p
-        class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 css-3-MuiTypography-root"
       >
         Andrew Mar
       </p>
     </div>
     <div
-      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-nzbgm2-MuiPaper-root"
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-13-MuiPaper-root"
     >
       coming soon
     </div>
