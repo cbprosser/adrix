@@ -10,4 +10,9 @@ export const sitemap: Sitemap = {
     urls: ['/search/results'],
     component: 'Results',
   },
+  advancedSearch: {
+    appBar: true,
+    urls: ['/search/advanced'],
+    component: 'AdvancedSearch',
+  },
 };

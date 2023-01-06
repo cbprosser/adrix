@@ -1,4 +1,5 @@
 import { Container } from '@mui/material';
+import { AdvancedSearchLinkButton } from '../../AdvancedSearchLinkButton';
 import { SimpleCardSearchBar } from '../../SimpleCardSearchBar';
 
 export const Home: React.FC = () => {
@@ -14,6 +15,7 @@ export const Home: React.FC = () => {
       fixed
     >
       <SimpleCardSearchBar hideError />
+      <AdvancedSearchLinkButton />
     </Container>
   );
 };
