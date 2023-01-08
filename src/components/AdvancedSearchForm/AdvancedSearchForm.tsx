@@ -13,7 +13,7 @@ import { FormEventHandler, useState } from 'react';
 import { mtgConstants } from '../../constants';
 import { searchForCard, useAppDispatch } from '../../redux';
 import { AdvancedSearchFormState, FormValueKeys } from '../../types';
-import { convertValuesToQuery } from '../../util';
+import { convertSymbols, convertValuesToQuery } from '../../util';
 
 const initialState: AdvancedSearchFormState = {
   values: {
@@ -113,7 +113,12 @@ export const AdvancedSearchForm = () => {
                           onChange={handleCheckboxChange}
                         />
                       }
-                      label={mtgConstants.colorAbbreviationMap[abbr]}
+                      label={
+                        <span>
+                          {convertSymbols(`{${abbr}}`)}
+                          {` ${mtgConstants.colorAbbreviationMap[abbr]}`}
+                        </span>
+                      }
                     />
                   </Grid>
                 ))}
@@ -141,7 +146,13 @@ export const AdvancedSearchForm = () => {
             </FormGroup>
           </Grid>
         </Grid>
-        <Grid flexGrow={1} justifyContent="end">
+        <Grid
+          flexGrow={1}
+          sx={{
+            display: 'flex',
+            justifyContent: 'end',
+          }}
+        >
           <Button type="submit">Submit</Button>
         </Grid>
       </Grid>

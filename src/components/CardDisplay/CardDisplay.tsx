@@ -1,6 +1,7 @@
 import { Box, Divider, Paper, styled, Typography } from '@mui/material';
 import { Fragment } from 'react';
 import { APICard } from '../../types';
+import { convertSymbols } from '../../util';
 
 interface CardDisplayProps {
   card?: APICard;
@@ -33,13 +34,14 @@ export const CardDisplay = ({ card }: CardDisplayProps) => {
       <Box component="img" src={normal} sx={{ maxHeight: 400 }} />
       <Paper sx={(theme) => ({ padding: theme.spacing(1), width: '33.33%' })}>
         <Typography>
-          {name} - {mana_cost}
+          {name}
+          {mana_cost ? [' - ', convertSymbols(mana_cost)] : undefined}
         </Typography>
         <SpacedDivider />
         <Typography>{type_line}</Typography>
         <SpacedDivider />
         {oracle_text?.split('\n').map((line, i) => (
-          <Typography key={i}>{line}</Typography>
+          <Typography key={i}>{convertSymbols(line)}</Typography>
         ))}
         <SpacedDivider />
         {(loyalty !== undefined || power !== undefined) && (
