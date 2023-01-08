@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import { AdvancedSearch } from '../../../../components';
+import { AdvancedSearch } from '../../../../components/Pages/AdvancedSearch';
 
 jest.mock('../../../../components/AdvancedSearchForm', () => ({
   AdvancedSearchForm: () => <div>AdvancedSearchForm Mocked</div>,

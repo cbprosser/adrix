@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
 import { useLocation, useSearchParams } from 'react-router-dom';
 import { URLSearchParams } from 'url';
-import { Results } from '../../../../components';
+import { Results } from '../../../../components/Pages/Results';
 import {
   getMockCardList,
   mockAComponent,

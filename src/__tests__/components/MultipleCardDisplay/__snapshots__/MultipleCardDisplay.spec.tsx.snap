@@ -1503,18 +1503,31 @@ exports[`MultipleCardDisplay Suite Should be able to show all columns 1`] = `
                   <div
                     aria-colindex="6"
                     aria-colspan="1"
-                    class="MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                    class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
                     data-colindex="5"
                     data-field="mana_cost"
                     role="cell"
                     style="min-width: 100px; max-width: 100px; min-height: 52px; max-height: 52px;"
                     tabindex="-1"
                   >
-                    <div
-                      class="MuiDataGrid-cellContent"
+                    <abbr
+                      class="css-137"
+                      title="Two generic mana"
                     >
-                      {2}{G}{U}
-                    </div>
+                      {2}
+                    </abbr>
+                    <abbr
+                      class="css-138"
+                      title="One green mana"
+                    >
+                      {G}
+                    </abbr>
+                    <abbr
+                      class="css-139"
+                      title="One blue mana"
+                    >
+                      {U}
+                    </abbr>
                   </div>
                   <div
                     aria-colindex="7"
@@ -1699,18 +1712,31 @@ exports[`MultipleCardDisplay Suite Should be able to show all columns 1`] = `
                   <div
                     aria-colindex="6"
                     aria-colspan="1"
-                    class="MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                    class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
                     data-colindex="5"
                     data-field="mana_cost"
                     role="cell"
                     style="min-width: 100px; max-width: 100px; min-height: 52px; max-height: 52px;"
                     tabindex="-1"
                   >
-                    <div
-                      class="MuiDataGrid-cellContent"
+                    <abbr
+                      class="css-140"
+                      title="Four generic mana"
                     >
-                      {4}{G}{U}
-                    </div>
+                      {4}
+                    </abbr>
+                    <abbr
+                      class="css-138"
+                      title="One green mana"
+                    >
+                      {G}
+                    </abbr>
+                    <abbr
+                      class="css-139"
+                      title="One blue mana"
+                    >
+                      {U}
+                    </abbr>
                   </div>
                   <div
                     aria-colindex="7"
@@ -1893,18 +1919,31 @@ exports[`MultipleCardDisplay Suite Should be able to show all columns 1`] = `
                   <div
                     aria-colindex="6"
                     aria-colspan="1"
-                    class="MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                    class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
                     data-colindex="5"
                     data-field="mana_cost"
                     role="cell"
                     style="min-width: 100px; max-width: 100px; min-height: 52px; max-height: 52px;"
                     tabindex="-1"
                   >
-                    <div
-                      class="MuiDataGrid-cellContent"
+                    <abbr
+                      class="css-137"
+                      title="Two generic mana"
                     >
-                      {2}{G}{U}
-                    </div>
+                      {2}
+                    </abbr>
+                    <abbr
+                      class="css-138"
+                      title="One green mana"
+                    >
+                      {G}
+                    </abbr>
+                    <abbr
+                      class="css-139"
+                      title="One blue mana"
+                    >
+                      {U}
+                    </abbr>
                   </div>
                   <div
                     aria-colindex="7"
@@ -2091,18 +2130,31 @@ exports[`MultipleCardDisplay Suite Should be able to show all columns 1`] = `
                   <div
                     aria-colindex="6"
                     aria-colspan="1"
-                    class="MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                    class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
                     data-colindex="5"
                     data-field="mana_cost"
                     role="cell"
                     style="min-width: 100px; max-width: 100px; min-height: 52px; max-height: 52px;"
                     tabindex="-1"
                   >
-                    <div
-                      class="MuiDataGrid-cellContent"
+                    <abbr
+                      class="css-137"
+                      title="Two generic mana"
                     >
-                      {2}{G}{U}
-                    </div>
+                      {2}
+                    </abbr>
+                    <abbr
+                      class="css-138"
+                      title="One green mana"
+                    >
+                      {G}
+                    </abbr>
+                    <abbr
+                      class="css-139"
+                      title="One blue mana"
+                    >
+                      {U}
+                    </abbr>
                   </div>
                   <div
                     aria-colindex="7"
@@ -2291,18 +2343,31 @@ exports[`MultipleCardDisplay Suite Should be able to show all columns 1`] = `
                   <div
                     aria-colindex="6"
                     aria-colspan="1"
-                    class="MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                    class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
                     data-colindex="5"
                     data-field="mana_cost"
                     role="cell"
                     style="min-width: 100px; max-width: 100px; min-height: 52px; max-height: 52px;"
                     tabindex="-1"
                   >
-                    <div
-                      class="MuiDataGrid-cellContent"
+                    <abbr
+                      class="css-149"
+                      title="One generic mana"
                     >
-                      {1}{G}{U}
-                    </div>
+                      {1}
+                    </abbr>
+                    <abbr
+                      class="css-138"
+                      title="One green mana"
+                    >
+                      {G}
+                    </abbr>
+                    <abbr
+                      class="css-139"
+                      title="One blue mana"
+                    >
+                      {U}
+                    </abbr>
                   </div>
                   <div
                     aria-colindex="7"
@@ -2489,18 +2554,31 @@ exports[`MultipleCardDisplay Suite Should be able to show all columns 1`] = `
                   <div
                     aria-colindex="6"
                     aria-colspan="1"
-                    class="MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                    class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
                     data-colindex="5"
                     data-field="mana_cost"
                     role="cell"
                     style="min-width: 100px; max-width: 100px; min-height: 52px; max-height: 52px;"
                     tabindex="-1"
                   >
-                    <div
-                      class="MuiDataGrid-cellContent"
+                    <abbr
+                      class="css-140"
+                      title="Four generic mana"
                     >
-                      {4}{G}{U}
-                    </div>
+                      {4}
+                    </abbr>
+                    <abbr
+                      class="css-138"
+                      title="One green mana"
+                    >
+                      {G}
+                    </abbr>
+                    <abbr
+                      class="css-139"
+                      title="One blue mana"
+                    >
+                      {U}
+                    </abbr>
                   </div>
                   <div
                     aria-colindex="7"
@@ -2614,32 +2692,32 @@ exports[`MultipleCardDisplay Suite Should be able to show all columns 1`] = `
       </div>
       <div>
         <div
-          class="MuiDataGrid-footerContainer css-137-MuiDataGrid-footerContainer"
+          class="MuiDataGrid-footerContainer css-155-MuiDataGrid-footerContainer"
         >
           <div />
           <div
-            class="MuiTablePagination-root css-138-MuiTablePagination-root"
+            class="MuiTablePagination-root css-156-MuiTablePagination-root"
           >
             <div
-              class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular MuiTablePagination-toolbar css-139-MuiToolbar-root-MuiTablePagination-toolbar"
+              class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular MuiTablePagination-toolbar css-157-MuiToolbar-root-MuiTablePagination-toolbar"
             >
               <div
-                class="MuiTablePagination-spacer css-140-MuiTablePagination-spacer"
+                class="MuiTablePagination-spacer css-158-MuiTablePagination-spacer"
               />
               <p
-                class="MuiTablePagination-selectLabel css-141-MuiTablePagination-selectLabel"
+                class="MuiTablePagination-selectLabel css-159-MuiTablePagination-selectLabel"
                 id=":r15:"
               >
                 Rows per page:
               </p>
               <div
-                class="MuiInputBase-root MuiInputBase-colorPrimary css-142-MuiInputBase-root-MuiTablePagination-select"
+                class="MuiInputBase-root MuiInputBase-colorPrimary css-160-MuiInputBase-root-MuiTablePagination-select"
               >
                 <div
                   aria-expanded="false"
                   aria-haspopup="listbox"
                   aria-labelledby=":r15: :r14:"
-                  class="MuiSelect-select MuiTablePagination-select MuiSelect-standard MuiInputBase-input css-143-MuiSelect-select-MuiInputBase-input"
+                  class="MuiSelect-select MuiTablePagination-select MuiSelect-standard MuiInputBase-input css-161-MuiSelect-select-MuiInputBase-input"
                   id=":r14:"
                   role="button"
                   tabindex="0"
@@ -2648,13 +2726,13 @@ exports[`MultipleCardDisplay Suite Should be able to show all columns 1`] = `
                 </div>
                 <input
                   aria-hidden="true"
-                  class="MuiSelect-nativeInput css-144-MuiSelect-nativeInput"
+                  class="MuiSelect-nativeInput css-162-MuiSelect-nativeInput"
                   tabindex="-1"
                   value="100"
                 />
                 <svg
                   aria-hidden="true"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiTablePagination-selectIcon MuiSelect-iconStandard css-145-MuiSvgIcon-root-MuiSelect-icon"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiTablePagination-selectIcon MuiSelect-iconStandard css-163-MuiSvgIcon-root-MuiSelect-icon"
                   data-testid="ArrowDropDownIcon"
                   focusable="false"
                   viewBox="0 0 24 24"
@@ -2665,7 +2743,7 @@ exports[`MultipleCardDisplay Suite Should be able to show all columns 1`] = `
                 </svg>
               </div>
               <p
-                class="MuiTablePagination-displayedRows css-146-MuiTablePagination-displayedRows"
+                class="MuiTablePagination-displayedRows css-164-MuiTablePagination-displayedRows"
               >
                 1–6 of 6
               </p>
@@ -2674,7 +2752,7 @@ exports[`MultipleCardDisplay Suite Should be able to show all columns 1`] = `
               >
                 <button
                   aria-label="Go to previous page"
-                  class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorInherit MuiIconButton-sizeMedium css-147-MuiButtonBase-root-MuiIconButton-root"
+                  class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorInherit MuiIconButton-sizeMedium css-165-MuiButtonBase-root-MuiIconButton-root"
                   disabled=""
                   tabindex="-1"
                   title="Go to previous page"
@@ -2694,7 +2772,7 @@ exports[`MultipleCardDisplay Suite Should be able to show all columns 1`] = `
                 </button>
                 <button
                   aria-label="Go to next page"
-                  class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorInherit MuiIconButton-sizeMedium css-147-MuiButtonBase-root-MuiIconButton-root"
+                  class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorInherit MuiIconButton-sizeMedium css-165-MuiButtonBase-root-MuiIconButton-root"
                   disabled=""
                   tabindex="-1"
                   title="Go to next page"
@@ -3808,18 +3886,31 @@ exports[`MultipleCardDisplay Suite Should match the snapshot 1`] = `
                   <div
                     aria-colindex="6"
                     aria-colspan="1"
-                    class="MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                    class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
                     data-colindex="5"
                     data-field="mana_cost"
                     role="cell"
                     style="min-width: 100px; max-width: 100px; min-height: 52px; max-height: 52px;"
                     tabindex="-1"
                   >
-                    <div
-                      class="MuiDataGrid-cellContent"
+                    <abbr
+                      class="css-100"
+                      title="Two generic mana"
                     >
-                      {2}{G}{U}
-                    </div>
+                      {2}
+                    </abbr>
+                    <abbr
+                      class="css-101"
+                      title="One green mana"
+                    >
+                      {G}
+                    </abbr>
+                    <abbr
+                      class="css-102"
+                      title="One blue mana"
+                    >
+                      {U}
+                    </abbr>
                   </div>
                   <div
                     aria-colindex="7"
@@ -3942,18 +4033,31 @@ exports[`MultipleCardDisplay Suite Should match the snapshot 1`] = `
                   <div
                     aria-colindex="6"
                     aria-colspan="1"
-                    class="MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                    class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
                     data-colindex="5"
                     data-field="mana_cost"
                     role="cell"
                     style="min-width: 100px; max-width: 100px; min-height: 52px; max-height: 52px;"
                     tabindex="-1"
                   >
-                    <div
-                      class="MuiDataGrid-cellContent"
+                    <abbr
+                      class="css-103"
+                      title="Four generic mana"
                     >
-                      {4}{G}{U}
-                    </div>
+                      {4}
+                    </abbr>
+                    <abbr
+                      class="css-101"
+                      title="One green mana"
+                    >
+                      {G}
+                    </abbr>
+                    <abbr
+                      class="css-102"
+                      title="One blue mana"
+                    >
+                      {U}
+                    </abbr>
                   </div>
                   <div
                     aria-colindex="7"
@@ -4076,18 +4180,31 @@ exports[`MultipleCardDisplay Suite Should match the snapshot 1`] = `
                   <div
                     aria-colindex="6"
                     aria-colspan="1"
-                    class="MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                    class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
                     data-colindex="5"
                     data-field="mana_cost"
                     role="cell"
                     style="min-width: 100px; max-width: 100px; min-height: 52px; max-height: 52px;"
                     tabindex="-1"
                   >
-                    <div
-                      class="MuiDataGrid-cellContent"
+                    <abbr
+                      class="css-100"
+                      title="Two generic mana"
                     >
-                      {2}{G}{U}
-                    </div>
+                      {2}
+                    </abbr>
+                    <abbr
+                      class="css-101"
+                      title="One green mana"
+                    >
+                      {G}
+                    </abbr>
+                    <abbr
+                      class="css-102"
+                      title="One blue mana"
+                    >
+                      {U}
+                    </abbr>
                   </div>
                   <div
                     aria-colindex="7"
@@ -4212,18 +4329,31 @@ exports[`MultipleCardDisplay Suite Should match the snapshot 1`] = `
                   <div
                     aria-colindex="6"
                     aria-colspan="1"
-                    class="MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                    class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
                     data-colindex="5"
                     data-field="mana_cost"
                     role="cell"
                     style="min-width: 100px; max-width: 100px; min-height: 52px; max-height: 52px;"
                     tabindex="-1"
                   >
-                    <div
-                      class="MuiDataGrid-cellContent"
+                    <abbr
+                      class="css-100"
+                      title="Two generic mana"
                     >
-                      {2}{G}{U}
-                    </div>
+                      {2}
+                    </abbr>
+                    <abbr
+                      class="css-101"
+                      title="One green mana"
+                    >
+                      {G}
+                    </abbr>
+                    <abbr
+                      class="css-102"
+                      title="One blue mana"
+                    >
+                      {U}
+                    </abbr>
                   </div>
                   <div
                     aria-colindex="7"
@@ -4350,18 +4480,31 @@ exports[`MultipleCardDisplay Suite Should match the snapshot 1`] = `
                   <div
                     aria-colindex="6"
                     aria-colspan="1"
-                    class="MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                    class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
                     data-colindex="5"
                     data-field="mana_cost"
                     role="cell"
                     style="min-width: 100px; max-width: 100px; min-height: 52px; max-height: 52px;"
                     tabindex="-1"
                   >
-                    <div
-                      class="MuiDataGrid-cellContent"
+                    <abbr
+                      class="css-112"
+                      title="One generic mana"
                     >
-                      {1}{G}{U}
-                    </div>
+                      {1}
+                    </abbr>
+                    <abbr
+                      class="css-101"
+                      title="One green mana"
+                    >
+                      {G}
+                    </abbr>
+                    <abbr
+                      class="css-102"
+                      title="One blue mana"
+                    >
+                      {U}
+                    </abbr>
                   </div>
                   <div
                     aria-colindex="7"
@@ -4486,18 +4629,31 @@ exports[`MultipleCardDisplay Suite Should match the snapshot 1`] = `
                   <div
                     aria-colindex="6"
                     aria-colspan="1"
-                    class="MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                    class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
                     data-colindex="5"
                     data-field="mana_cost"
                     role="cell"
                     style="min-width: 100px; max-width: 100px; min-height: 52px; max-height: 52px;"
                     tabindex="-1"
                   >
-                    <div
-                      class="MuiDataGrid-cellContent"
+                    <abbr
+                      class="css-103"
+                      title="Four generic mana"
                     >
-                      {4}{G}{U}
-                    </div>
+                      {4}
+                    </abbr>
+                    <abbr
+                      class="css-101"
+                      title="One green mana"
+                    >
+                      {G}
+                    </abbr>
+                    <abbr
+                      class="css-102"
+                      title="One blue mana"
+                    >
+                      {U}
+                    </abbr>
                   </div>
                   <div
                     aria-colindex="7"
@@ -4549,32 +4705,32 @@ exports[`MultipleCardDisplay Suite Should match the snapshot 1`] = `
       </div>
       <div>
         <div
-          class="MuiDataGrid-footerContainer css-100-MuiDataGrid-footerContainer"
+          class="MuiDataGrid-footerContainer css-118-MuiDataGrid-footerContainer"
         >
           <div />
           <div
-            class="MuiTablePagination-root css-101-MuiTablePagination-root"
+            class="MuiTablePagination-root css-119-MuiTablePagination-root"
           >
             <div
-              class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular MuiTablePagination-toolbar css-102-MuiToolbar-root-MuiTablePagination-toolbar"
+              class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular MuiTablePagination-toolbar css-120-MuiToolbar-root-MuiTablePagination-toolbar"
             >
               <div
-                class="MuiTablePagination-spacer css-103-MuiTablePagination-spacer"
+                class="MuiTablePagination-spacer css-121-MuiTablePagination-spacer"
               />
               <p
-                class="MuiTablePagination-selectLabel css-104-MuiTablePagination-selectLabel"
+                class="MuiTablePagination-selectLabel css-122-MuiTablePagination-selectLabel"
                 id=":r6:"
               >
                 Rows per page:
               </p>
               <div
-                class="MuiInputBase-root MuiInputBase-colorPrimary css-105-MuiInputBase-root-MuiTablePagination-select"
+                class="MuiInputBase-root MuiInputBase-colorPrimary css-123-MuiInputBase-root-MuiTablePagination-select"
               >
                 <div
                   aria-expanded="false"
                   aria-haspopup="listbox"
                   aria-labelledby=":r6: :r5:"
-                  class="MuiSelect-select MuiTablePagination-select MuiSelect-standard MuiInputBase-input css-106-MuiSelect-select-MuiInputBase-input"
+                  class="MuiSelect-select MuiTablePagination-select MuiSelect-standard MuiInputBase-input css-124-MuiSelect-select-MuiInputBase-input"
                   id=":r5:"
                   role="button"
                   tabindex="0"
@@ -4583,13 +4739,13 @@ exports[`MultipleCardDisplay Suite Should match the snapshot 1`] = `
                 </div>
                 <input
                   aria-hidden="true"
-                  class="MuiSelect-nativeInput css-107-MuiSelect-nativeInput"
+                  class="MuiSelect-nativeInput css-125-MuiSelect-nativeInput"
                   tabindex="-1"
                   value="100"
                 />
                 <svg
                   aria-hidden="true"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiTablePagination-selectIcon MuiSelect-iconStandard css-108-MuiSvgIcon-root-MuiSelect-icon"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiTablePagination-selectIcon MuiSelect-iconStandard css-126-MuiSvgIcon-root-MuiSelect-icon"
                   data-testid="ArrowDropDownIcon"
                   focusable="false"
                   viewBox="0 0 24 24"
@@ -4600,7 +4756,7 @@ exports[`MultipleCardDisplay Suite Should match the snapshot 1`] = `
                 </svg>
               </div>
               <p
-                class="MuiTablePagination-displayedRows css-109-MuiTablePagination-displayedRows"
+                class="MuiTablePagination-displayedRows css-127-MuiTablePagination-displayedRows"
               >
                 1–6 of 6
               </p>
@@ -4609,7 +4765,7 @@ exports[`MultipleCardDisplay Suite Should match the snapshot 1`] = `
               >
                 <button
                   aria-label="Go to previous page"
-                  class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorInherit MuiIconButton-sizeMedium css-110-MuiButtonBase-root-MuiIconButton-root"
+                  class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorInherit MuiIconButton-sizeMedium css-128-MuiButtonBase-root-MuiIconButton-root"
                   disabled=""
                   tabindex="-1"
                   title="Go to previous page"
@@ -4629,7 +4785,7 @@ exports[`MultipleCardDisplay Suite Should match the snapshot 1`] = `
                 </button>
                 <button
                   aria-label="Go to next page"
-                  class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorInherit MuiIconButton-sizeMedium css-110-MuiButtonBase-root-MuiIconButton-root"
+                  class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorInherit MuiIconButton-sizeMedium css-128-MuiButtonBase-root-MuiIconButton-root"
                   disabled=""
                   tabindex="-1"
                   title="Go to next page"

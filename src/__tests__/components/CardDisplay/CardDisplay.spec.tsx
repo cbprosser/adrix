@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import { CardDisplay } from '../../../components';
+import { CardDisplay } from '../../../components/CardDisplay';
 import { mockCard, mockPlaneswalkerCard } from '../../testUtils';
 
 describe('CardDisplay Suite', () => {

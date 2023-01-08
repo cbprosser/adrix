@@ -7,7 +7,7 @@ import {
 } from '@mui/x-data-grid';
 import { useNavigate } from 'react-router-dom';
 import { APIList, MultipleCardDisplayProps } from '../../types';
-import { cardToMUIRow, muiRowToCard } from '../../util';
+import { cardToMUIRow, convertSymbols, muiRowToCard } from '../../util';
 
 export const MultipleCardDisplay: React.FC<MultipleCardDisplayProps> = ({
   list,
@@ -20,7 +20,11 @@ export const MultipleCardDisplay: React.FC<MultipleCardDisplayProps> = ({
       { field: 'collector_number', headerName: 'Collector Number', width: 60 },
       { field: 'name', headerName: 'Card Name', flex: 1 },
       { field: 'type_line', headerName: 'Type', flex: 1 },
-      { field: 'mana_cost', headerName: 'Mana Cost' },
+      {
+        field: 'mana_cost',
+        headerName: 'Mana Cost',
+        renderCell: ({ value }) => (value ? convertSymbols(value) : undefined),
+      },
       { field: 'loyalty', headerName: 'Loyalty', width: 60 },
       { field: 'power', headerName: 'Power', width: 60 },
       { field: 'toughness', headerName: 'Toughness', width: 60 },

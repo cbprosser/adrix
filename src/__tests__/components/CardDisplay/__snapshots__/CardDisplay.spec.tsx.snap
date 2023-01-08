@@ -15,10 +15,28 @@ exports[`CardDisplay Suite Should match the snapshot when a planeswalker card is
       <p
         class="MuiTypography-root MuiTypography-body1 css-3-MuiTypography-root"
       >
-        Kasmina, Enigma Sage - {1}{G}{U}
+        Kasmina, Enigma Sage - 
+        <abbr
+          class="css-4"
+          title="One generic mana"
+        >
+          {1}
+        </abbr>
+        <abbr
+          class="css-5"
+          title="One green mana"
+        >
+          {G}
+        </abbr>
+        <abbr
+          class="css-6"
+          title="One blue mana"
+        >
+          {U}
+        </abbr>
       </p>
       <hr
-        class="MuiDivider-root MuiDivider-fullWidth css-4-MuiDivider-root"
+        class="MuiDivider-root MuiDivider-fullWidth css-7-MuiDivider-root"
       />
       <p
         class="MuiTypography-root MuiTypography-body1 css-3-MuiTypography-root"
@@ -26,7 +44,7 @@ exports[`CardDisplay Suite Should match the snapshot when a planeswalker card is
         Legendary Planeswalker — Kasmina
       </p>
       <hr
-        class="MuiDivider-root MuiDivider-fullWidth css-4-MuiDivider-root"
+        class="MuiDivider-root MuiDivider-fullWidth css-7-MuiDivider-root"
       />
       <p
         class="MuiTypography-root MuiTypography-body1 css-3-MuiTypography-root"
@@ -49,7 +67,7 @@ exports[`CardDisplay Suite Should match the snapshot when a planeswalker card is
         −8: Search your library for an instant or sorcery card that shares a color with this planeswalker, exile that card, then shuffle. You may cast that card without paying its mana cost.
       </p>
       <hr
-        class="MuiDivider-root MuiDivider-fullWidth css-4-MuiDivider-root"
+        class="MuiDivider-root MuiDivider-fullWidth css-7-MuiDivider-root"
       />
       <p
         class="MuiTypography-root MuiTypography-body1 css-3-MuiTypography-root"
@@ -57,7 +75,7 @@ exports[`CardDisplay Suite Should match the snapshot when a planeswalker card is
         2
       </p>
       <hr
-        class="MuiDivider-root MuiDivider-fullWidth css-4-MuiDivider-root"
+        class="MuiDivider-root MuiDivider-fullWidth css-7-MuiDivider-root"
       />
       <p
         class="MuiTypography-root MuiTypography-body1 css-3-MuiTypography-root"
@@ -66,7 +84,7 @@ exports[`CardDisplay Suite Should match the snapshot when a planeswalker card is
       </p>
     </div>
     <div
-      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-15-MuiPaper-root"
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-18-MuiPaper-root"
     >
       coming soon
     </div>
@@ -89,10 +107,28 @@ exports[`CardDisplay Suite Should match the snapshot when a standard card is pre
       <p
         class="MuiTypography-root MuiTypography-body1 css-3-MuiTypography-root"
       >
-        Adrix and Nev, Twincasters - {2}{G}{U}
+        Adrix and Nev, Twincasters - 
+        <abbr
+          class="css-4"
+          title="Two generic mana"
+        >
+          {2}
+        </abbr>
+        <abbr
+          class="css-5"
+          title="One green mana"
+        >
+          {G}
+        </abbr>
+        <abbr
+          class="css-6"
+          title="One blue mana"
+        >
+          {U}
+        </abbr>
       </p>
       <hr
-        class="MuiDivider-root MuiDivider-fullWidth css-4-MuiDivider-root"
+        class="MuiDivider-root MuiDivider-fullWidth css-7-MuiDivider-root"
       />
       <p
         class="MuiTypography-root MuiTypography-body1 css-3-MuiTypography-root"
@@ -100,12 +136,26 @@ exports[`CardDisplay Suite Should match the snapshot when a standard card is pre
         Legendary Creature — Merfolk Wizard
       </p>
       <hr
-        class="MuiDivider-root MuiDivider-fullWidth css-4-MuiDivider-root"
+        class="MuiDivider-root MuiDivider-fullWidth css-7-MuiDivider-root"
       />
       <p
         class="MuiTypography-root MuiTypography-body1 css-3-MuiTypography-root"
       >
-        Ward {2} (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays {2}.)
+        Ward 
+        <abbr
+          class="css-4"
+          title="Two generic mana"
+        >
+          {2}
+        </abbr>
+         (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays 
+        <abbr
+          class="css-4"
+          title="Two generic mana"
+        >
+          {2}
+        </abbr>
+        .)
       </p>
       <p
         class="MuiTypography-root MuiTypography-body1 css-3-MuiTypography-root"
@@ -113,7 +163,7 @@ exports[`CardDisplay Suite Should match the snapshot when a standard card is pre
         If one or more tokens would be created under your control, twice that many of those tokens are created instead.
       </p>
       <hr
-        class="MuiDivider-root MuiDivider-fullWidth css-4-MuiDivider-root"
+        class="MuiDivider-root MuiDivider-fullWidth css-7-MuiDivider-root"
       />
       <p
         class="MuiTypography-root MuiTypography-body1 css-3-MuiTypography-root"
@@ -121,7 +171,7 @@ exports[`CardDisplay Suite Should match the snapshot when a standard card is pre
         2/2
       </p>
       <hr
-        class="MuiDivider-root MuiDivider-fullWidth css-4-MuiDivider-root"
+        class="MuiDivider-root MuiDivider-fullWidth css-7-MuiDivider-root"
       />
       <p
         class="MuiTypography-root MuiTypography-body1 css-3-MuiTypography-root"
@@ -130,7 +180,7 @@ exports[`CardDisplay Suite Should match the snapshot when a standard card is pre
       </p>
     </div>
     <div
-      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-13-MuiPaper-root"
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-18-MuiPaper-root"
     >
       coming soon
     </div>
