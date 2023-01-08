@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import { AdvancedSearchLinkButton } from '../../../components';
+import { AdvancedSearchLinkButton } from '../../../components/AdvancedSearchLinkButton';
 
 jest.mock('react-router-dom', () => ({
   Link: (props: any) => (

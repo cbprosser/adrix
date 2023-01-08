@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { AdvancedSearchForm } from '../../../components';
+import { AdvancedSearchForm } from '../../../components/AdvancedSearchForm';
 import { searchForCard } from '../../../redux';
 
 const user = userEvent.setup();

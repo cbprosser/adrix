@@ -3,7 +3,7 @@ import { DataGridProps } from '@mui/x-data-grid';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { useNavigate } from 'react-router-dom';
-import { MultipleCardDisplay } from '../../../components';
+import { MultipleCardDisplay } from '../../../components/MultipleCardDisplay';
 import { MultipleCardDisplayProps } from '../../../types';
 import { getMockCardList, mockCard } from '../../testUtils';
 

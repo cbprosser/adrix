@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import { Home } from '../../../../components';
+import { Home } from '../../../../components/Pages/Home';
 import { initialCardsState, useAppSelector } from '../../../../redux';
 
 jest.mock('../../../../components/SimpleCardSearchBar', () => ({

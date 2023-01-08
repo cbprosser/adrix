@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import { AppHeader } from '../../../components';
+import { AppHeader } from '../../../components/AppHeader';
 
 jest.mock('../../../components/SimpleCardSearchBar', () => ({
   SimpleCardSearchBar: (props: any) => (

@@ -348,7 +348,15 @@ exports[`AdvancedSearchForm Suite Should match the snapshot 1`] = `
                   <span
                     class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-41-MuiTypography-root"
                   >
-                    White
+                    <span>
+                      <abbr
+                        class="css-42"
+                        title="One white mana"
+                      >
+                        {W}
+                      </abbr>
+                       White
+                    </span>
                   </span>
                 </label>
               </div>
@@ -385,7 +393,15 @@ exports[`AdvancedSearchForm Suite Should match the snapshot 1`] = `
                   <span
                     class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-41-MuiTypography-root"
                   >
-                    Blue
+                    <span>
+                      <abbr
+                        class="css-50"
+                        title="One blue mana"
+                      >
+                        {U}
+                      </abbr>
+                       Blue
+                    </span>
                   </span>
                 </label>
               </div>
@@ -422,7 +438,15 @@ exports[`AdvancedSearchForm Suite Should match the snapshot 1`] = `
                   <span
                     class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-41-MuiTypography-root"
                   >
-                    Black
+                    <span>
+                      <abbr
+                        class="css-58"
+                        title="One black mana"
+                      >
+                        {B}
+                      </abbr>
+                       Black
+                    </span>
                   </span>
                 </label>
               </div>
@@ -459,7 +483,15 @@ exports[`AdvancedSearchForm Suite Should match the snapshot 1`] = `
                   <span
                     class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-41-MuiTypography-root"
                   >
-                    Red
+                    <span>
+                      <abbr
+                        class="css-66"
+                        title="One red mana"
+                      >
+                        {R}
+                      </abbr>
+                       Red
+                    </span>
                   </span>
                 </label>
               </div>
@@ -496,7 +528,15 @@ exports[`AdvancedSearchForm Suite Should match the snapshot 1`] = `
                   <span
                     class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-41-MuiTypography-root"
                   >
-                    Green
+                    <span>
+                      <abbr
+                        class="css-74"
+                        title="One green mana"
+                      >
+                        {G}
+                      </abbr>
+                       Green
+                    </span>
                   </span>
                 </label>
               </div>
@@ -533,7 +573,15 @@ exports[`AdvancedSearchForm Suite Should match the snapshot 1`] = `
                   <span
                     class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-41-MuiTypography-root"
                   >
-                    Colorless
+                    <span>
+                      <abbr
+                        class="css-82"
+                        title="One colorless mana"
+                      >
+                        {C}
+                      </abbr>
+                       Colorless
+                    </span>
                   </span>
                 </label>
               </div>
@@ -707,10 +755,10 @@ exports[`AdvancedSearchForm Suite Should match the snapshot 1`] = `
         </div>
       </div>
       <div
-        class="MuiGrid2-root MuiGrid2-direction-xs-row css-109-MuiGrid2-root"
+        class="MuiGrid2-root MuiGrid2-direction-xs-row css-115-MuiGrid2-root"
       >
         <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-110-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-116-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
           type="submit"
         >
