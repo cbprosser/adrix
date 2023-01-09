@@ -5,3 +5,4 @@ export * from './CardDisplay';
 export * from './MultipleCardDisplay';
 export * from './Pages';
 export * from './SimpleCardSearchBar';
+export * from './StyledIconButton';

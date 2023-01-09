@@ -23,6 +23,7 @@ export const MultipleCardDisplay: React.FC<MultipleCardDisplayProps> = ({
       {
         field: 'mana_cost',
         headerName: 'Mana Cost',
+        flex: 0.6,
         renderCell: ({ value }) => (value ? convertSymbols(value) : undefined),
       },
       { field: 'loyalty', headerName: 'Loyalty', width: 60 },
