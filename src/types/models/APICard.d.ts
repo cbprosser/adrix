@@ -63,7 +63,7 @@ export type APIPrint = {
   artist_ids: string[];
   booster: boolean;
   border_color: string;
-  card_back_id: APIUUID;
+  card_back_id?: APIUUID;
   collector_number: string;
   content_warning?: boolean;
   digital: boolean;
@@ -107,13 +107,15 @@ export type APIPrint = {
 
 export type APICardFace = {
   artist?: string;
-  color_indicator?: string;
+  artist_id?: APIUUID;
+  color_indicator?: APIColors[];
   colors?: APIColors[];
-  flavor_text?: APIColors[];
+  flavor_text?: string;
+  flavor_name?: string;
   illustration_id?: APIUUID;
   image_uris?: APIImageURIS;
   loyalty?: string;
-  mana_cost: string;
+  mana_cost?: string;
   name: string;
   object: string;
   oracle_text?: string;
