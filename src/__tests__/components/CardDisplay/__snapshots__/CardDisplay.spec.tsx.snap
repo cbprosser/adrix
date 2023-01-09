@@ -1,90 +1,429 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`CardDisplay Suite Multi faced card tests Should flip the card when the transform button is clicked 1`] = `
+Snapshot Diff:
+- First value
++ Second value
+
+@@ -5,11 +5,11 @@
+      <div
+        class="MuiBox-root css-1xtlyh"
+      >
+        <img
+          class="MuiBox-root css-1xydbly"
+-         src="https://cards.scryfall.io/normal/front/a/a/aae6fb12-b252-453b-bca7-1ea2a0d6c8dc.jpg?1581395173"
++         src="https://cards.scryfall.io/normal/back/a/a/aae6fb12-b252-453b-bca7-1ea2a0d6c8dc.jpg?1581395173"
+        />
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeMedium css-156ae6z-MuiButtonBase-root-MuiIconButton-root"
+          tabindex="0"
+          type="button"
+`;
+
+exports[`CardDisplay Suite Multi faced card tests Should flip the card when the transform button is clicked 2`] = `
+Snapshot Diff:
+Compared values have no visual difference.
+`;
+
+exports[`CardDisplay Suite Multi faced card tests Should match the snapshot when a multi faced card is present 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-0-MuiPaper-root"
+  >
+    <div
+      class="MuiBox-root css-1"
+    >
+      <img
+        class="MuiBox-root css-2"
+        src="https://cards.scryfall.io/normal/front/a/a/aae6fb12-b252-453b-bca7-1ea2a0d6c8dc.jpg?1581395173"
+      />
+      <button
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeMedium css-3-MuiButtonBase-root-MuiIconButton-root"
+        tabindex="0"
+        type="button"
+        variant="contained"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-4-MuiSvgIcon-root"
+          data-testid="LoopIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46C19.54 15.03 20 13.57 20 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74C4.46 8.97 4 10.43 4 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3z"
+          />
+        </svg>
+        <span
+          class="MuiTouchRipple-root css-5-MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+    <div
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-6-MuiPaper-root"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-7-MuiTypography-root"
+      >
+        Huntmaster of the Fells - 
+        <abbr
+          class="css-8"
+          title="Two generic mana"
+        >
+          {2}
+        </abbr>
+        <abbr
+          class="css-9"
+          title="One red mana"
+        >
+          {R}
+        </abbr>
+        <abbr
+          class="css-10"
+          title="One green mana"
+        >
+          {G}
+        </abbr>
+      </p>
+      <hr
+        class="MuiDivider-root MuiDivider-fullWidth css-11-MuiDivider-root"
+      />
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-7-MuiTypography-root"
+      >
+        Creature — Human Werewolf
+      </p>
+      <hr
+        class="MuiDivider-root MuiDivider-fullWidth css-11-MuiDivider-root"
+      />
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-7-MuiTypography-root"
+      >
+        Whenever this creature enters the battlefield or transforms into Huntmaster of the Fells, create a 2/2 green Wolf creature token and you gain 2 life.
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-7-MuiTypography-root"
+      >
+        At the beginning of each upkeep, if no spells were cast last turn, transform Huntmaster of the Fells.
+      </p>
+      <hr
+        class="MuiDivider-root MuiDivider-fullWidth css-11-MuiDivider-root"
+      />
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-7-MuiTypography-root"
+      >
+        2/2
+      </p>
+      <hr
+        class="MuiDivider-root MuiDivider-fullWidth css-11-MuiDivider-root"
+      />
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-7-MuiTypography-root"
+      >
+        Chris Rahn
+      </p>
+      <hr
+        class="MuiDivider-root MuiDivider-fullWidth css-20-MuiDivider-root"
+      />
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-7-MuiTypography-root"
+      >
+        Ravager of the Fells
+      </p>
+      <hr
+        class="MuiDivider-root MuiDivider-fullWidth css-11-MuiDivider-root"
+      />
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-7-MuiTypography-root"
+      >
+        Creature — Werewolf
+      </p>
+      <hr
+        class="MuiDivider-root MuiDivider-fullWidth css-11-MuiDivider-root"
+      />
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-7-MuiTypography-root"
+      >
+        Trample
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-7-MuiTypography-root"
+      >
+        Whenever this creature transforms into Ravager of the Fells, it deals 2 damage to target opponent or planeswalker and 2 damage to up to one target creature that player or that planeswalker's controller controls.
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-7-MuiTypography-root"
+      >
+        At the beginning of each upkeep, if a player cast two or more spells last turn, transform Ravager of the Fells.
+      </p>
+      <hr
+        class="MuiDivider-root MuiDivider-fullWidth css-11-MuiDivider-root"
+      />
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-7-MuiTypography-root"
+      >
+        4/4
+      </p>
+      <hr
+        class="MuiDivider-root MuiDivider-fullWidth css-11-MuiDivider-root"
+      />
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-7-MuiTypography-root"
+      >
+        Chris Rahn
+      </p>
+    </div>
+    <div
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-32-MuiPaper-root"
+    >
+      coming soon
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`CardDisplay Suite Multi sided card test Should flip the card when the transform button is clicked 1`] = `
+Snapshot Diff:
+- First value
++ Second value
+
+@@ -4,11 +4,11 @@
+    >
+      <div
+        class="MuiBox-root css-1xtlyh"
+      >
+        <img
+-         class="MuiBox-root css-1xydbly"
++         class="MuiBox-root css-br3xov"
+          src="https://cards.scryfall.io/normal/front/4/2/42ba0e13-d20f-47f9-9c86-2b0b13c39ada.jpg?1562493487"
+        />
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeMedium css-156ae6z-MuiButtonBase-root-MuiIconButton-root"
+          tabindex="0"
+`;
+
+exports[`CardDisplay Suite Multi sided card test Should flip the card when the transform button is clicked 2`] = `
+Snapshot Diff:
+Compared values have no visual difference.
+`;
+
+exports[`CardDisplay Suite Multi sided card test Should match the snapshot when a multi sided card is present 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-0-MuiPaper-root"
+  >
+    <div
+      class="MuiBox-root css-1"
+    >
+      <img
+        class="MuiBox-root css-2"
+        src="https://cards.scryfall.io/normal/front/4/2/42ba0e13-d20f-47f9-9c86-2b0b13c39ada.jpg?1562493487"
+      />
+      <button
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeMedium css-3-MuiButtonBase-root-MuiIconButton-root"
+        tabindex="0"
+        type="button"
+        variant="contained"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-4-MuiSvgIcon-root"
+          data-testid="LoopIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46C19.54 15.03 20 13.57 20 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74C4.46 8.97 4 10.43 4 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3z"
+          />
+        </svg>
+        <span
+          class="MuiTouchRipple-root css-5-MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+    <div
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-6-MuiPaper-root"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-7-MuiTypography-root"
+      >
+        Rune-Tail, Kitsune Ascendant - 
+        <abbr
+          class="css-8"
+          title="Two generic mana"
+        >
+          {2}
+        </abbr>
+        <abbr
+          class="css-9"
+          title="One white mana"
+        >
+          {W}
+        </abbr>
+      </p>
+      <hr
+        class="MuiDivider-root MuiDivider-fullWidth css-10-MuiDivider-root"
+      />
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-7-MuiTypography-root"
+      >
+        Legendary Creature — Fox Monk
+      </p>
+      <hr
+        class="MuiDivider-root MuiDivider-fullWidth css-10-MuiDivider-root"
+      />
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-7-MuiTypography-root"
+      >
+        When you have 30 or more life, flip Rune-Tail, Kitsune Ascendant.
+      </p>
+      <hr
+        class="MuiDivider-root MuiDivider-fullWidth css-10-MuiDivider-root"
+      />
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-7-MuiTypography-root"
+      >
+        2/2
+      </p>
+      <hr
+        class="MuiDivider-root MuiDivider-fullWidth css-10-MuiDivider-root"
+      />
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-7-MuiTypography-root"
+      >
+        Randy Gallegos
+      </p>
+      <hr
+        class="MuiDivider-root MuiDivider-fullWidth css-18-MuiDivider-root"
+      />
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-7-MuiTypography-root"
+      >
+        Rune-Tail's Essence
+      </p>
+      <hr
+        class="MuiDivider-root MuiDivider-fullWidth css-10-MuiDivider-root"
+      />
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-7-MuiTypography-root"
+      >
+        Legendary Enchantment
+      </p>
+      <hr
+        class="MuiDivider-root MuiDivider-fullWidth css-10-MuiDivider-root"
+      />
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-7-MuiTypography-root"
+      >
+        Prevent all damage that would be dealt to creatures you control.
+      </p>
+      <hr
+        class="MuiDivider-root MuiDivider-fullWidth css-10-MuiDivider-root"
+      />
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-7-MuiTypography-root"
+      >
+        Randy Gallegos
+      </p>
+    </div>
+    <div
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-26-MuiPaper-root"
+    >
+      coming soon
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`CardDisplay Suite Should match the snapshot when a planeswalker card is present 1`] = `
 <DocumentFragment>
   <div
     class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-0-MuiPaper-root"
   >
-    <img
-      class="MuiBox-root css-1"
-      src="https://c1.scryfall.com/file/scryfall-cards/normal/front/1/7/178bf300-38cf-4ab2-9e66-6fcaa112b649.jpg?1627429348"
-    />
     <div
-      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-2-MuiPaper-root"
+      class="MuiBox-root css-1"
+    >
+      <img
+        class="MuiBox-root css-2"
+        src="https://c1.scryfall.com/file/scryfall-cards/normal/front/1/7/178bf300-38cf-4ab2-9e66-6fcaa112b649.jpg?1627429348"
+      />
+    </div>
+    <div
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-3-MuiPaper-root"
     >
       <p
-        class="MuiTypography-root MuiTypography-body1 css-3-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 css-4-MuiTypography-root"
       >
         Kasmina, Enigma Sage - 
         <abbr
-          class="css-4"
+          class="css-5"
           title="One generic mana"
         >
           {1}
         </abbr>
         <abbr
-          class="css-5"
+          class="css-6"
           title="One green mana"
         >
           {G}
         </abbr>
         <abbr
-          class="css-6"
+          class="css-7"
           title="One blue mana"
         >
           {U}
         </abbr>
       </p>
       <hr
-        class="MuiDivider-root MuiDivider-fullWidth css-7-MuiDivider-root"
+        class="MuiDivider-root MuiDivider-fullWidth css-8-MuiDivider-root"
       />
       <p
-        class="MuiTypography-root MuiTypography-body1 css-3-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 css-4-MuiTypography-root"
       >
         Legendary Planeswalker — Kasmina
       </p>
       <hr
-        class="MuiDivider-root MuiDivider-fullWidth css-7-MuiDivider-root"
+        class="MuiDivider-root MuiDivider-fullWidth css-8-MuiDivider-root"
       />
       <p
-        class="MuiTypography-root MuiTypography-body1 css-3-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 css-4-MuiTypography-root"
       >
         Each other planeswalker you control has the loyalty abilities of Kasmina, Enigma Sage.
       </p>
       <p
-        class="MuiTypography-root MuiTypography-body1 css-3-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 css-4-MuiTypography-root"
       >
         +2: Scry 1.
       </p>
       <p
-        class="MuiTypography-root MuiTypography-body1 css-3-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 css-4-MuiTypography-root"
       >
         −X: Create a 0/0 green and blue Fractal creature token. Put X +1/+1 counters on it.
       </p>
       <p
-        class="MuiTypography-root MuiTypography-body1 css-3-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 css-4-MuiTypography-root"
       >
         −8: Search your library for an instant or sorcery card that shares a color with this planeswalker, exile that card, then shuffle. You may cast that card without paying its mana cost.
       </p>
       <hr
-        class="MuiDivider-root MuiDivider-fullWidth css-7-MuiDivider-root"
+        class="MuiDivider-root MuiDivider-fullWidth css-8-MuiDivider-root"
       />
       <p
-        class="MuiTypography-root MuiTypography-body1 css-3-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 css-4-MuiTypography-root"
       >
         2
       </p>
       <hr
-        class="MuiDivider-root MuiDivider-fullWidth css-7-MuiDivider-root"
+        class="MuiDivider-root MuiDivider-fullWidth css-8-MuiDivider-root"
       />
       <p
-        class="MuiTypography-root MuiTypography-body1 css-3-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 css-4-MuiTypography-root"
       >
         Tyler Jacobson
       </p>
     </div>
     <div
-      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-18-MuiPaper-root"
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-19-MuiPaper-root"
     >
       coming soon
     </div>
@@ -97,60 +436,64 @@ exports[`CardDisplay Suite Should match the snapshot when a standard card is pre
   <div
     class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-0-MuiPaper-root"
   >
-    <img
-      class="MuiBox-root css-1"
-      src="https://c1.scryfall.com/file/scryfall-cards/normal/front/d/4/d495e084-92ec-4675-b6aa-8ade2775b796.jpg?1625190786"
-    />
     <div
-      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-2-MuiPaper-root"
+      class="MuiBox-root css-1"
+    >
+      <img
+        class="MuiBox-root css-2"
+        src="https://c1.scryfall.com/file/scryfall-cards/normal/front/d/4/d495e084-92ec-4675-b6aa-8ade2775b796.jpg?1625190786"
+      />
+    </div>
+    <div
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-3-MuiPaper-root"
     >
       <p
-        class="MuiTypography-root MuiTypography-body1 css-3-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 css-4-MuiTypography-root"
       >
         Adrix and Nev, Twincasters - 
         <abbr
-          class="css-4"
+          class="css-5"
           title="Two generic mana"
         >
           {2}
         </abbr>
         <abbr
-          class="css-5"
+          class="css-6"
           title="One green mana"
         >
           {G}
         </abbr>
         <abbr
-          class="css-6"
+          class="css-7"
           title="One blue mana"
         >
           {U}
         </abbr>
       </p>
       <hr
-        class="MuiDivider-root MuiDivider-fullWidth css-7-MuiDivider-root"
+        class="MuiDivider-root MuiDivider-fullWidth css-8-MuiDivider-root"
       />
       <p
-        class="MuiTypography-root MuiTypography-body1 css-3-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 css-4-MuiTypography-root"
       >
         Legendary Creature — Merfolk Wizard
       </p>
       <hr
-        class="MuiDivider-root MuiDivider-fullWidth css-7-MuiDivider-root"
+        class="MuiDivider-root MuiDivider-fullWidth css-8-MuiDivider-root"
       />
       <p
-        class="MuiTypography-root MuiTypography-body1 css-3-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 css-4-MuiTypography-root"
       >
         Ward 
         <abbr
-          class="css-4"
+          class="css-5"
           title="Two generic mana"
         >
           {2}
         </abbr>
          (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays 
         <abbr
-          class="css-4"
+          class="css-5"
           title="Two generic mana"
         >
           {2}
@@ -158,29 +501,29 @@ exports[`CardDisplay Suite Should match the snapshot when a standard card is pre
         .)
       </p>
       <p
-        class="MuiTypography-root MuiTypography-body1 css-3-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 css-4-MuiTypography-root"
       >
         If one or more tokens would be created under your control, twice that many of those tokens are created instead.
       </p>
       <hr
-        class="MuiDivider-root MuiDivider-fullWidth css-7-MuiDivider-root"
+        class="MuiDivider-root MuiDivider-fullWidth css-8-MuiDivider-root"
       />
       <p
-        class="MuiTypography-root MuiTypography-body1 css-3-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 css-4-MuiTypography-root"
       >
         2/2
       </p>
       <hr
-        class="MuiDivider-root MuiDivider-fullWidth css-7-MuiDivider-root"
+        class="MuiDivider-root MuiDivider-fullWidth css-8-MuiDivider-root"
       />
       <p
-        class="MuiTypography-root MuiTypography-body1 css-3-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 css-4-MuiTypography-root"
       >
         Andrew Mar
       </p>
     </div>
     <div
-      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-18-MuiPaper-root"
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-19-MuiPaper-root"
     >
       coming soon
     </div>

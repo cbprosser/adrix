@@ -305,6 +305,333 @@ export const mockPlaneswalkerCard: APICard = {
   },
 };
 
+export const mockTransformCard: APICard = {
+  object: 'card',
+  id: 'aae6fb12-b252-453b-bca7-1ea2a0d6c8dc',
+  oracle_id: '582328cd-660d-47a4-bb23-e91e80b9a907',
+  multiverse_ids: [262875, 262699],
+  mtgo_id: 43463,
+  mtgo_foil_id: 43464,
+  tcgplayer_id: 57633,
+  cardmarket_id: 252500,
+  name: 'Huntmaster of the Fells // Ravager of the Fells',
+  lang: 'en',
+  released_at: '2012-02-03',
+  uri: 'https://api.scryfall.com/cards/aae6fb12-b252-453b-bca7-1ea2a0d6c8dc',
+  scryfall_uri:
+    'https://scryfall.com/card/dka/140/huntmaster-of-the-fells-ravager-of-the-fells?utm_source=api',
+  layout: 'transform',
+  highres_image: true,
+  image_status: 'highres_scan',
+  cmc: 4,
+  type_line: 'Creature — Human Werewolf // Creature — Werewolf',
+  color_identity: ['G', 'R'],
+  keywords: ['Transform', 'Trample'],
+  card_faces: [
+    {
+      object: 'card_face',
+      name: 'Huntmaster of the Fells',
+      mana_cost: '{2}{R}{G}',
+      type_line: 'Creature — Human Werewolf',
+      oracle_text:
+        'Whenever this creature enters the battlefield or transforms into Huntmaster of the Fells, create a 2/2 green Wolf creature token and you gain 2 life.\nAt the beginning of each upkeep, if no spells were cast last turn, transform Huntmaster of the Fells.',
+      colors: ['G', 'R'],
+      power: '2',
+      toughness: '2',
+      artist: 'Chris Rahn',
+      artist_id: '7742047e-0f80-4c0f-a530-d07460165e86',
+      illustration_id: '8ce1bfa2-7cd6-4f4f-b23e-c5d985acec48',
+      image_uris: {
+        small:
+          'https://cards.scryfall.io/small/front/a/a/aae6fb12-b252-453b-bca7-1ea2a0d6c8dc.jpg?1581395173',
+        normal:
+          'https://cards.scryfall.io/normal/front/a/a/aae6fb12-b252-453b-bca7-1ea2a0d6c8dc.jpg?1581395173',
+        large:
+          'https://cards.scryfall.io/large/front/a/a/aae6fb12-b252-453b-bca7-1ea2a0d6c8dc.jpg?1581395173',
+        png: 'https://cards.scryfall.io/png/front/a/a/aae6fb12-b252-453b-bca7-1ea2a0d6c8dc.png?1581395173',
+        art_crop:
+          'https://cards.scryfall.io/art_crop/front/a/a/aae6fb12-b252-453b-bca7-1ea2a0d6c8dc.jpg?1581395173',
+        border_crop:
+          'https://cards.scryfall.io/border_crop/front/a/a/aae6fb12-b252-453b-bca7-1ea2a0d6c8dc.jpg?1581395173',
+      },
+    },
+    {
+      object: 'card_face',
+      name: 'Ravager of the Fells',
+      flavor_name: '',
+      mana_cost: '',
+      type_line: 'Creature — Werewolf',
+      oracle_text:
+        "Trample\nWhenever this creature transforms into Ravager of the Fells, it deals 2 damage to target opponent or planeswalker and 2 damage to up to one target creature that player or that planeswalker's controller controls.\nAt the beginning of each upkeep, if a player cast two or more spells last turn, transform Ravager of the Fells.",
+      colors: ['G', 'R'],
+      color_indicator: ['G', 'R'],
+      power: '4',
+      toughness: '4',
+      artist: 'Chris Rahn',
+      artist_id: '7742047e-0f80-4c0f-a530-d07460165e86',
+      illustration_id: 'a26de848-cc6a-4f49-9d43-72afa3c80b3e',
+      image_uris: {
+        small:
+          'https://cards.scryfall.io/small/back/a/a/aae6fb12-b252-453b-bca7-1ea2a0d6c8dc.jpg?1581395173',
+        normal:
+          'https://cards.scryfall.io/normal/back/a/a/aae6fb12-b252-453b-bca7-1ea2a0d6c8dc.jpg?1581395173',
+        large:
+          'https://cards.scryfall.io/large/back/a/a/aae6fb12-b252-453b-bca7-1ea2a0d6c8dc.jpg?1581395173',
+        png: 'https://cards.scryfall.io/png/back/a/a/aae6fb12-b252-453b-bca7-1ea2a0d6c8dc.png?1581395173',
+        art_crop:
+          'https://cards.scryfall.io/art_crop/back/a/a/aae6fb12-b252-453b-bca7-1ea2a0d6c8dc.jpg?1581395173',
+        border_crop:
+          'https://cards.scryfall.io/border_crop/back/a/a/aae6fb12-b252-453b-bca7-1ea2a0d6c8dc.jpg?1581395173',
+      },
+    },
+  ],
+  all_parts: [
+    {
+      object: 'related_card',
+      id: 'aae6fb12-b252-453b-bca7-1ea2a0d6c8dc',
+      component: 'combo_piece',
+      name: 'Huntmaster of the Fells // Ravager of the Fells',
+      type_line: 'Creature — Human Werewolf // Creature — Werewolf',
+      uri: 'https://api.scryfall.com/cards/aae6fb12-b252-453b-bca7-1ea2a0d6c8dc',
+    },
+    {
+      object: 'related_card',
+      id: '39133387-9cd3-49f1-88e1-d23636e020b3',
+      component: 'token',
+      name: 'Wolf',
+      type_line: 'Token Creature — Wolf',
+      uri: 'https://api.scryfall.com/cards/39133387-9cd3-49f1-88e1-d23636e020b3',
+    },
+  ],
+  legalities: {
+    standard: 'not_legal',
+    future: 'not_legal',
+    historic: 'not_legal',
+    gladiator: 'not_legal',
+    pioneer: 'not_legal',
+    explorer: 'not_legal',
+    modern: 'legal',
+    legacy: 'legal',
+    pauper: 'not_legal',
+    vintage: 'legal',
+    penny: 'legal',
+    commander: 'legal',
+    brawl: 'not_legal',
+    historicbrawl: 'not_legal',
+    alchemy: 'not_legal',
+    paupercommander: 'not_legal',
+    duel: 'legal',
+    oldschool: 'not_legal',
+    premodern: 'not_legal',
+  },
+  games: ['paper', 'mtgo'],
+  reserved: false,
+  foil: true,
+  nonfoil: true,
+  finishes: ['nonfoil', 'foil'],
+  oversized: false,
+  promo: false,
+  reprint: false,
+  variation: false,
+  set_id: '8052750a-aaf2-46fc-b46d-633f14124017',
+  set: 'dka',
+  set_name: 'Dark Ascension',
+  set_type: 'expansion',
+  set_uri: 'https://api.scryfall.com/sets/8052750a-aaf2-46fc-b46d-633f14124017',
+  set_search_uri:
+    'https://api.scryfall.com/cards/search?order=set&q=e%3Adka&unique=prints',
+  scryfall_set_uri: 'https://scryfall.com/sets/dka?utm_source=api',
+  rulings_uri:
+    'https://api.scryfall.com/cards/aae6fb12-b252-453b-bca7-1ea2a0d6c8dc/rulings',
+  prints_search_uri:
+    'https://api.scryfall.com/cards/search?order=released&q=oracleid%3A582328cd-660d-47a4-bb23-e91e80b9a907&unique=prints',
+  collector_number: '140',
+  digital: false,
+  rarity: 'mythic',
+  artist: 'Chris Rahn',
+  artist_ids: ['7742047e-0f80-4c0f-a530-d07460165e86'],
+  border_color: 'black',
+  frame: '2003',
+  frame_effects: ['sunmoondfc'],
+  full_art: false,
+  textless: false,
+  booster: true,
+  story_spotlight: false,
+  edhrec_rank: 4911,
+  penny_rank: 836,
+  prices: {
+    usd: '4.67',
+    usd_foil: '20.12',
+    eur: '5.96',
+    eur_foil: '13.00',
+    tix: '0.12',
+  },
+  related_uris: {
+    gatherer:
+      'https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=262875',
+    tcgplayer_infinite_articles:
+      'https://infinite.tcgplayer.com/search?contentMode=article&game=magic&partner=scryfall&q=Huntmaster+of+the+Fells+%2F%2F+Ravager+of+the+Fells&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall',
+    tcgplayer_infinite_decks:
+      'https://infinite.tcgplayer.com/search?contentMode=deck&game=magic&partner=scryfall&q=Huntmaster+of+the+Fells+%2F%2F+Ravager+of+the+Fells&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall',
+    edhrec: 'https://edhrec.com/route/?cc=Huntmaster+of+the+Fells',
+  },
+  purchase_uris: {
+    tcgplayer:
+      'https://www.tcgplayer.com/product/57633?page=1&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall',
+    cardmarket:
+      'https://www.cardmarket.com/en/Magic/Products/Search?referrer=scryfall&searchString=Huntmaster+of+the+Fells&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall',
+    cardhoarder:
+      'https://www.cardhoarder.com/cards/43463?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall',
+  },
+};
+
+export const mockFlipCard: APICard = {
+  rarity: 'rare',
+  set: 'sok',
+  prices: {
+    usd: '3.62',
+    tix: '0.01',
+    eur: '3.00',
+    usd_foil: '30.93',
+    eur_foil: '7.95',
+  },
+  object: 'card',
+  id: '42ba0e13-d20f-47f9-9c86-2b0b13c39ada',
+  oracle_id: '710f1f8a-e5f7-4889-9f12-2611f42d5c73',
+  multiverse_ids: [87600],
+  mtgo_id: 22178,
+  mtgo_foil_id: 22179,
+  tcgplayer_id: 12522,
+  cardmarket_id: 12750,
+  name: "Rune-Tail, Kitsune Ascendant // Rune-Tail's Essence",
+  lang: 'en',
+  released_at: '2005-06-03',
+  uri: 'https://api.scryfall.com/cards/42ba0e13-d20f-47f9-9c86-2b0b13c39ada',
+  scryfall_uri:
+    'https://scryfall.com/card/sok/27/rune-tail-kitsune-ascendant-rune-tails-essence?utm_source=api',
+  layout: 'flip',
+  highres_image: true,
+  image_status: 'highres_scan',
+  image_uris: {
+    small:
+      'https://cards.scryfall.io/small/front/4/2/42ba0e13-d20f-47f9-9c86-2b0b13c39ada.jpg?1562493487',
+    normal:
+      'https://cards.scryfall.io/normal/front/4/2/42ba0e13-d20f-47f9-9c86-2b0b13c39ada.jpg?1562493487',
+    large:
+      'https://cards.scryfall.io/large/front/4/2/42ba0e13-d20f-47f9-9c86-2b0b13c39ada.jpg?1562493487',
+    png: 'https://cards.scryfall.io/png/front/4/2/42ba0e13-d20f-47f9-9c86-2b0b13c39ada.png?1562493487',
+    art_crop:
+      'https://cards.scryfall.io/art_crop/front/4/2/42ba0e13-d20f-47f9-9c86-2b0b13c39ada.jpg?1562493487',
+    border_crop:
+      'https://cards.scryfall.io/border_crop/front/4/2/42ba0e13-d20f-47f9-9c86-2b0b13c39ada.jpg?1562493487',
+  },
+  mana_cost: '{2}{W}',
+  cmc: 3,
+  type_line: 'Legendary Creature — Fox Monk // Legendary Enchantment',
+  power: '2',
+  toughness: '2',
+  colors: ['W'],
+  color_identity: ['W'],
+  keywords: [],
+  card_faces: [
+    {
+      object: 'card_face',
+      name: 'Rune-Tail, Kitsune Ascendant',
+      mana_cost: '{2}{W}',
+      type_line: 'Legendary Creature — Fox Monk',
+      oracle_text:
+        'When you have 30 or more life, flip Rune-Tail, Kitsune Ascendant.',
+      power: '2',
+      toughness: '2',
+      artist: 'Randy Gallegos',
+      artist_id: 'a5048cc7-438a-4378-98e4-da99b78e1db0',
+      illustration_id: '3f685343-d4ba-49ba-a3f1-7fc634be5992',
+    },
+    {
+      object: 'card_face',
+      name: "Rune-Tail's Essence",
+      flavor_name: '',
+      mana_cost: '',
+      type_line: 'Legendary Enchantment',
+      oracle_text:
+        'Prevent all damage that would be dealt to creatures you control.',
+      artist: 'Randy Gallegos',
+      artist_id: 'a5048cc7-438a-4378-98e4-da99b78e1db0',
+    },
+  ],
+  legalities: {
+    standard: 'not_legal',
+    future: 'not_legal',
+    historic: 'not_legal',
+    gladiator: 'not_legal',
+    pioneer: 'not_legal',
+    explorer: 'not_legal',
+    modern: 'legal',
+    legacy: 'legal',
+    pauper: 'not_legal',
+    vintage: 'legal',
+    penny: 'legal',
+    commander: 'legal',
+    brawl: 'not_legal',
+    historicbrawl: 'not_legal',
+    alchemy: 'not_legal',
+    paupercommander: 'not_legal',
+    duel: 'legal',
+    oldschool: 'not_legal',
+    premodern: 'not_legal',
+  },
+  games: ['paper', 'mtgo'],
+  reserved: false,
+  foil: true,
+  nonfoil: true,
+  finishes: ['nonfoil', 'foil'],
+  oversized: false,
+  promo: false,
+  reprint: false,
+  variation: false,
+  set_id: '4db16ad3-2b95-442f-bb6b-e9aa7fe7f769',
+  set_name: 'Saviors of Kamigawa',
+  set_type: 'expansion',
+  set_uri: 'https://api.scryfall.com/sets/4db16ad3-2b95-442f-bb6b-e9aa7fe7f769',
+  set_search_uri:
+    'https://api.scryfall.com/cards/search?order=set&q=e%3Asok&unique=prints',
+  scryfall_set_uri: 'https://scryfall.com/sets/sok?utm_source=api',
+  rulings_uri:
+    'https://api.scryfall.com/cards/42ba0e13-d20f-47f9-9c86-2b0b13c39ada/rulings',
+  prints_search_uri:
+    'https://api.scryfall.com/cards/search?order=released&q=oracleid%3A710f1f8a-e5f7-4889-9f12-2611f42d5c73&unique=prints',
+  collector_number: '27',
+  digital: false,
+  card_back_id: '0aeebaf5-8c7d-4636-9e82-8c27447861f7',
+  artist: 'Randy Gallegos',
+  artist_ids: ['a5048cc7-438a-4378-98e4-da99b78e1db0'],
+  illustration_id: '3f685343-d4ba-49ba-a3f1-7fc634be5992',
+  border_color: 'black',
+  frame: '2003',
+  full_art: false,
+  textless: false,
+  booster: true,
+  story_spotlight: false,
+  penny_rank: 13755,
+  related_uris: {
+    gatherer:
+      'https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=87600',
+    tcgplayer_infinite_articles:
+      'https://infinite.tcgplayer.com/search?contentMode=article&game=magic&partner=scryfall&q=Rune-Tail%2C+Kitsune+Ascendant+%2F%2F+Rune-Tail%27s+Essence&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall',
+    tcgplayer_infinite_decks:
+      'https://infinite.tcgplayer.com/search?contentMode=deck&game=magic&partner=scryfall&q=Rune-Tail%2C+Kitsune+Ascendant+%2F%2F+Rune-Tail%27s+Essence&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall',
+    edhrec: 'https://edhrec.com/route/?cc=Rune-Tail%2C+Kitsune+Ascendant',
+  },
+  purchase_uris: {
+    tcgplayer:
+      'https://www.tcgplayer.com/product/12522?page=1&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall',
+    cardmarket:
+      'https://www.cardmarket.com/en/Magic/Products/Search?referrer=scryfall&searchString=Rune-Tail%2C+Kitsune+Ascendant&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall',
+    cardhoarder:
+      'https://www.cardhoarder.com/cards/22178?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall',
+  },
+};
+
 export const getMockCardList = (multiple?: boolean): APIList<APICard> => ({
   object: 'list',
   total_cards: 1,
